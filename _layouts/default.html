@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html class='csstransforms no-csstransforms3d csstransitions'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if page.title %}
+    <title>{{page.title}}</title>
+    {% else %}
+    <title>{{site.title}}</title>
+    {% endif %}
+
+    {% if page.description %}
+    <meta name='description' content="{{page.description}}"/>
+    {% else %}
+    <meta name='description' content="{{site.description}}"/>
+    {% endif %}
+
+    <link rel="stylesheet" href='/css/app.css'>
+  </head>
+  <body>
+    <div class='main'>
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
