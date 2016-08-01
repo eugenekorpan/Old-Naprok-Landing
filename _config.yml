@@ -1,0 +1,8 @@
+baseurl: ''
+url: 'http://naprok.com'
+sass:
+  style: :compressed
+
+title: Some title
+description:
+  Some descriptions
