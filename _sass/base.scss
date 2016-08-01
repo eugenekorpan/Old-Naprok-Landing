@@ -14,4 +14,96 @@ menu, ol, ul {
   padding: 0;
 }
 
+body {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: $black;
+  overflow: hidden;
+  width: 100%;
+  min-width: 320px;
+  background-color: #fff;
+}
+
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+::selection, ::-moz-selection { background: $blue; color: $blue; }
+
+.grid_1 { width: 6.5%; }
+.grid_2 { width: 15%; }
+.grid_3 { width: 23.5%; }
+.grid_4 { width: 32%; }
+.grid_5 { width: 40.5%; }
+.grid_6 { width: 49%; }
+.grid_7 { width: 57.5%; }
+.grid_8 { width: 66%; }
+.grid_9 { width: 74.5%; }
+.grid_10 { width: 83%; }
+.grid_11 { width: 91.5%; }
+.grid_12 { width: 100%; }
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  margin: 0 2% 20px 0;
+  float: left;
+  display: block;
+}
+
+.left { margin-left: 0; }
+.right { margin-right: 0; }
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu {
+  transition: .3s;
+  position: fixed;
+  height: 74px;
+  width: 100%;
+  background-color: $blue;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 24px -1px;
+}
+
+.brand-name img {
+  margin-top: 15px;
+}
+
+ul.navigation {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  li {
+    text-align: center;
+    display: inline-block;
+    margin-left: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    a {
+      text-decoration: none;
+      transition: color 0.3s ease;
+      display: block;
+      padding: 24px 18px;
+      color: white;
+      &:hover, &.active {
+        color: #dd951e;
+      }
+    }
+  }
+}
