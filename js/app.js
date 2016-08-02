@@ -1,8 +1,11 @@
-var selector, elems, makeActive;
+var helems, felems, selector, makeActive;
 
 selector = '.navigation li a[href^="/' + location.pathname.split("/")[1] + '"]';
-elems = document.querySelectorAll(selector);
+
+helems = document.querySelectorAll(selector);
+felems = document.querySelectorAll('#footer ' + selector);
 
 makeActive = function () {
-  elems[0].classList.add('active');
+  helems[0].classList.add('active');
+  felems[0].classList.add('active');
 };
