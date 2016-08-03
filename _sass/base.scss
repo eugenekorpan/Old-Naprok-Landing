@@ -185,11 +185,11 @@ ul.navigation {
 }
 
 
-#home1 {
+.type1 {
   padding-top: 140px;
   padding-bottom: 160px;
   height: 300px;
-  background: url("/images/home-01.jpg") no-repeat;
+  background: url('/images/home-01.jpg') no-repeat;
   background-position: 68%;
   background-size: cover;
 }
@@ -270,13 +270,23 @@ p {
   }
 }
 
-#home2 {
+.type2, .type9 {
   padding-top: 60px;
   padding-bottom: 100px;
-  height: 654px;
 }
 
-#home3 {
+.type2 {
+  height: 650px;
+}
+
+.type9 {
+  height: 500px;
+  img {
+    width: 100%;
+  }
+}
+
+.type3 {
   height: 141px;
   background-color: $yellow;
   h2 {
@@ -284,42 +294,59 @@ p {
   }
 }
 
-#home4, #home5 {
+.type4, .type5 {
   height: 690px;
   h2 {
     color: white;
+    line-height: 56px;
   }
   .container {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  b p {
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
   p {
     color: white;
+    .bold {
+      font-family: 'PT Serif', serif;
+    }
   }
 }
 
-#home4 {
+.type4 {
   background-color: $blue;
-  .img-home4 {
-    background: url("/images/home-04.jpg") center no-repeat;
+  .img-home4, .img-about2 {
     height: 690px;
     margin: 0;
   }
+  .img-home4 {
+    background: url('/images/home-04.jpg') center no-repeat;
+  }
+  .img-about2 {
+    background: url('/images/about-02.jpg') center no-repeat;
+  }
 }
 
-#home5 {
+.type5 {
   background-color: #1762aa;
-  .img-home5 {
-    background: url("/images/home-05.jpg") left no-repeat;
+  .img-home5, .img-about3 {
     height: 690px;
     margin: 0;
     position: absolute;
     left: 59.5%;
   }
+  .img-home5 {
+    background: url('/images/home-05.jpg') left no-repeat;
+  }
+  .img-about3 {
+    background: url('/images/about-03.jpg') left no-repeat;
+  }
 }
 
-#home6 {
-  height: 550px;
+.type6, .type10 {
   padding-top: 80px;
   padding-bottom: 80px;
   .grid_3 + .grid_3 {
@@ -327,7 +354,36 @@ p {
   }
 }
 
-#home7 {
+.type6 {
+  height: 550px;
+}
+
+.type10 {
+  height: 700px;
+  h4 {
+    margin-top: 0;
+  }
+}
+
+.type8, .type10 {
+  .social-icons {
+    li + li {
+      padding-left: 35px;
+    }
+    a {
+      color: $yellow;
+      transition: color 0.3s ease;
+      &:hover, &.active {
+        color: $blue;
+      }
+    }
+    span {
+      font-size: 24px;
+    }
+  }
+}
+
+.type7 {
   height: 430px;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -355,7 +411,7 @@ p {
   }
 }
 
-#home8 {
+.type8 {
   height: 700px;
   padding-top: 30px;
   padding-bottom: 170px;
@@ -369,21 +425,6 @@ p {
   p {
     color: #818589;
   }
-  .social-icons {
-    li + li {
-      padding-left: 35px;
-    }
-    a {
-      color: $yellow;
-      transition: color 0.3s ease;
-      &:hover, &.active {
-        color: $blue;
-      }
-    }
-    span {
-      font-size: 24px;
-    }
-  }
   .space {
     margin-top: 35px;
   }
@@ -396,7 +437,7 @@ p {
     padding-left: 30px;
     margin-top: 10px;
     &::before {
-      content: "\2713";
+      content: '\2713';
       position: absolute;
       left: 0px;
       top: 2px;
