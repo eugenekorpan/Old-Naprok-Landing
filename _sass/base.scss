@@ -280,9 +280,15 @@ p {
 }
 
 .type9 {
-  height: 500px;
+  height: 520px;
   img {
     width: 100%;
+  }
+  h4 {
+    margin-top: 5px;
+  }
+  .btn {
+    margin-top: 30px;
   }
 }
 
@@ -332,7 +338,7 @@ p {
 
 .type5 {
   background-color: #1762aa;
-  .img-home5, .img-about3 {
+  .img-home5, .img-about3, .img-sector1 {
     height: 690px;
     margin: 0;
     position: absolute;
@@ -344,9 +350,12 @@ p {
   .img-about3 {
     background: url('/images/about-03.jpg') left no-repeat;
   }
+  .img-sector1 {
+    background: url('/images/sector-01.jpg') left no-repeat;
+  }
 }
 
-.type6, .type10 {
+.type6, .type10, .type11 {
   padding-top: 80px;
   padding-bottom: 80px;
   .grid_3 + .grid_3 {
@@ -362,6 +371,28 @@ p {
   height: 700px;
   h4 {
     margin-top: 0;
+  }
+}
+
+.type11 {
+  height: 650px;
+  .marked-list {
+    li {
+      padding-bottom: 20px;
+      a {
+        color: #393b3d;
+        transition: color 0.3s ease;
+        &:hover, &.active {
+          color: $blue;
+        }
+      }
+      &::before {
+        color: $yellow;
+      }
+    }
+    li:not(:last-child) {
+      border-bottom: 1px solid rgba(59, 60, 63, 0.298039);
+    }
   }
 }
 
@@ -425,9 +456,10 @@ p {
   p {
     color: #818589;
   }
-  .space {
-    margin-top: 35px;
-  }
+}
+
+.space {
+  margin-top: 35px;
 }
 
 .marked-list {
