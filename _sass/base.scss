@@ -290,6 +290,9 @@ p {
   .btn {
     margin-top: 30px;
   }
+  .blue {
+    color: $blue;
+  }
 }
 
 .type3 {
@@ -300,7 +303,7 @@ p {
   }
 }
 
-.type4, .type5 {
+.type4, .type5, .type12 {
   height: 690px;
   h2 {
     color: white;
@@ -352,6 +355,17 @@ p {
   }
   .img-sector1 {
     background: url('/images/sector-01.jpg') left no-repeat;
+  }
+}
+
+
+.type12 {
+  height: 630px;
+  background-color: $blue;
+  .img-help1 {
+    height: 630px;
+    margin: 0;
+    background: url('/images/help-01.jpg') left no-repeat;
   }
 }
 
@@ -510,5 +524,19 @@ p {
   }
   span::before {
     transform: translateY(65%);
+  }
+}
+
+.type13 {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  height: 200px;
+  background: url('/images/help-02.jpg') center no-repeat;
+  text-align: center;
+  h1 {
+    font-size: 76px;
+  }
+  h2 {
+    color: white;
   }
 }
