@@ -161,7 +161,7 @@ ul.navigation {
     a {
       line-height: 30px;
       font-size: 18px;
-      color: $blue;
+      color: white;
       transition: color 0.3s ease;
       &:hover, &.active {
         color: $light-blue;
@@ -178,7 +178,7 @@ ul.navigation {
     margin-top: 41px;
   }
   .copyright {
-    color: $blue;
+    color: white;
     font-size: 14px;
     margin-top: 92px;
   }
@@ -340,7 +340,7 @@ p {
 }
 
 .type5 {
-  background-color: #1762aa;
+  background-color: $dark-blue;
   .img-home5, .img-about3, .img-sector1 {
     height: 690px;
     margin: 0;
