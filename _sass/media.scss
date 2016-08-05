@@ -1,0 +1,300 @@
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  ul.navigation {
+    text-align: right;
+    margin: 0;
+    li a {
+      padding: 20px 5px;
+      span { font-size: 16px; }
+    }
+  }
+
+  h1, h2 {
+    font-size: 350%;
+  }
+
+  .container { width: 724px; }
+
+  .type4 {
+    height: 690px;
+    .img-home4, .img-about2, .img-sector1 {
+      height: 690px;
+    }
+  }
+
+  .type5 {
+    height: 720px;
+    .img-home5, .img-about3 {
+      height: 720px;
+    }
+  }
+
+  .type6 {
+    height: 1000px;
+  }
+
+  .type9 {
+    height: 750px;
+  }
+
+  .type10 {
+    .social-icons {
+      li + li {
+        padding-left: 15px;
+      }
+    }
+  }
+
+  .type13 {
+    height: 250px;
+    h1 {
+      font-size: 400%;
+    }
+    h2 {
+      font-size: 250%;
+    }
+  }
+
+  .type14 {
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  ul.navigation {
+    text-align: center;
+    margin: 0;
+    li a {
+      padding: 0px 10px;
+      span { font-size: 12px; }
+    }
+  }
+
+  .naprok img {
+    margin-left: 43%;
+  }
+
+  #header, .menu {
+    height: 120px;
+  }
+
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .grid_5,
+  .grid_6,
+  .grid_7,
+  .grid_8,
+  .grid_9,
+  .grid_10,
+  .grid_11,
+  .grid_12 {
+    margin: 0;
+    width: 100%;
+  }
+
+  .container {
+    width: 420px;
+  }
+
+  h1, h2 {
+    font-size: 300%;
+  }
+
+  .type1 {
+    height: 500px;
+  }
+
+  .type2 {
+    height: 1100px;
+  }
+
+  .type3 {
+    height: 180px;
+  }
+
+  .type4 {
+    height: 1200px;
+    .img-home4, .img-about2 {
+      height: 500px;
+    }
+  }
+
+  .type5 {
+    height: 1380px;
+    .img-home5, .img-about3 {
+      height: 700px;
+    }
+  }
+
+  .type6 {
+    height: 1600px;
+  }
+
+  .type7 {
+    height: 1180px;
+  }
+
+  .type8 {
+    height: 2550px;
+    img {
+      width: 50%;
+    }
+  }
+
+  .type9 {
+    height: 1100px;
+  }
+
+  .type10 {
+    height: 1900px;
+    img {
+      width: 50%;
+    }
+  }
+
+  .type11 {
+    height: 2020px;
+  }
+
+  .type12 {
+    height: 1100px;
+  }
+
+  .type13 {
+    height: 180px;
+    h1 {
+      font-size: 300%;
+    }
+    h2 {
+      font-size: 200%;
+    }
+  }
+
+  .type14 {
+    height: 1250px;
+  }
+
+  .type15 {
+    height: 1850px;
+  }
+
+  .type16 {
+    height: 700px;
+  }
+
+  #footer {
+    height: 230px;
+    ul.navigation {
+      li a {
+        padding: 4px 6px 4px 0;
+      }
+    }
+    .social-icons {
+      text-align: left;
+      margin-top: 30px;
+      li {
+        padding: 0 3px;
+      }
+      span {
+        font-size: 20px;
+      }
+      a {
+        font-size: 14px;
+      }
+    }
+    .copyright {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width : 479px) {
+
+  ul.navigation {
+    text-align: center;
+    margin: 0;
+    li a {
+      padding: 0px 2px;
+      span { font-size: 11px; }
+    }
+  }
+
+  .naprok img {
+    margin-left: 42%;
+  }
+
+  .container {
+    width: 320px;
+  }
+
+  h1, h2 {
+    font-size: 280%;
+  }
+
+  .type2 {
+    height: 1150px;
+  }
+
+  .type4 {
+    height: 1300px;
+    .img-home4, .img-about2 {
+      height: 500px;
+    }
+  }
+
+  .type5 {
+    height: 1400px;
+    .img-home5, .img-about3 {
+      height: 700px;
+    }
+  }
+
+  .type6 {
+    height: 1850px;
+  }
+
+  .type7 {
+    height: 1250px;
+  }
+
+  .type8 {
+    height: 2350px;
+  }
+
+  .type9 {
+    height: 1150px;
+  }
+
+  .type12 {
+    height: 1200px;
+  }
+
+  .type13 {
+    height: 120px;
+    h1 {
+      font-size: 200%;
+    }
+    h2 {
+      font-size: 120%;
+    }
+  }
+
+  .type14 {
+    height: 1500px;
+  }
+
+  .type15 {
+    height: 1750px;
+  }
+
+  .type16 {
+    height: 750px;
+  }
+}
+
+@media screen and (max-width : 320px) {
+  .container {
+    width: 285px;
+  }
+}

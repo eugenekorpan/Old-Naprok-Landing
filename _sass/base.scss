@@ -39,6 +39,9 @@ body {
 }
 
 .section {
+  img {
+    width: 100%;
+  }
   width: 100%;
   position: relative;
   &:before, &:after {
@@ -56,6 +59,20 @@ body {
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
 ::selection, ::-moz-selection { background: $blue; color: $blue; }
+
+.row {
+  clear: both;
+	padding: 0px;
+	margin: 0px;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after { clear: both; }
+  &:first-child {
+    margin-left: 0;
+  }
+}
 
 .grid_1 { width: 6.5%; }
 .grid_2 { width: 15%; }
@@ -82,9 +99,10 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 .grid_10,
 .grid_11,
 .grid_12 {
-  margin: 10px 1% 10px 0;
-  float: left;
   display: block;
+	float:left;
+	margin: 0 0 0 2%;
+  &:first-child { margin-left: 0; }
 }
 
 .left { margin-left: 0; }
@@ -98,7 +116,7 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
 #header, .menu {
   position: relative;
-  height: 94px;
+  height: 74px;
 }
 
 .menu {
@@ -150,8 +168,7 @@ ul.navigation {
 #footer {
   background-color: $dark-blue;
   position: relative;
-  padding-top: 60px;
-  height: 400px;
+  height: 300px;
   .social-icons {
     text-align: right;
     margin-top: 70px;
@@ -173,9 +190,10 @@ ul.navigation {
   }
   ul.navigation {
     text-align: left;
-    margin-left: -36px;
-    margin-right: -36px;
-    margin-top: 41px;
+    margin-top: 30px;
+    li a {
+      padding: 24px 36px 24px 0;
+    }
   }
   .copyright {
     color: white;
@@ -184,28 +202,26 @@ ul.navigation {
   }
 }
 
-
 .type1 {
-  padding-top: 140px;
-  padding-bottom: 160px;
-  height: 300px;
+  height: 590px;
   background: url('/images/home-01.jpg') no-repeat;
   background-position: 68%;
   background-size: cover;
 }
 
+h1, h2, h3, h4 {
+  line-height: 1.37;
+}
+
 h1 {
-  font-size: 60px;
+  font-size: 55px;
   color: white;
-  line-height: 1.16667;
 }
 
 h2 {
   font-size: 48px;
   color: #0d365d;
-  line-height: 0.83333;
 }
-
 
 h3 {
   font-family: serif;
@@ -270,17 +286,11 @@ p {
   }
 }
 
-.type2, .type9 {
-  padding-top: 60px;
-  padding-bottom: 100px;
-}
-
 .type2 {
-  height: 650px;
+  height: 760px;
 }
 
-.type9 {
-  height: 520px;
+.type9, .type14 {
   img {
     width: 100%;
   }
@@ -295,8 +305,16 @@ p {
   }
 }
 
+.type9, .type16 {
+  height: 600px;
+}
+
+.type14 {
+  height: 700px;
+}
+
 .type3 {
-  height: 141px;
+  height: 150px;
   background-color: $yellow;
   h2 {
     color: white;
@@ -304,14 +322,9 @@ p {
 }
 
 .type4, .type5, .type12 {
-  height: 690px;
   h2 {
     color: white;
     line-height: 56px;
-  }
-  .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
   b p {
     margin-top: 40px;
@@ -325,30 +338,16 @@ p {
   }
 }
 
-.type4 {
-  background-color: $blue;
-  .img-home4, .img-about2 {
-    height: 690px;
-    margin: 0;
-  }
+.type4, .type5, .type12 {
   .img-home4 {
-    background: url('/images/home-04.jpg') center no-repeat;
-  }
-  .img-about2 {
-    background: url('/images/about-02.jpg') center no-repeat;
-  }
-}
-
-.type5 {
-  background-color: $dark-blue;
-  .img-home5, .img-about3, .img-sector1 {
-    height: 690px;
-    margin: 0;
-    position: absolute;
-    left: 59.5%;
+    background: url('/images/home-04.jpg') no-repeat;
+    background-position: 75%;
   }
   .img-home5 {
     background: url('/images/home-05.jpg') left no-repeat;
+  }
+  .img-about2 {
+    background: url('/images/about-02.jpg') center no-repeat;
   }
   .img-about3 {
     background: url('/images/about-03.jpg') left no-repeat;
@@ -358,38 +357,49 @@ p {
   }
 }
 
+.type4 {
+  height: 650px;
+  background-color: $blue;
+  .img-home4, .img-about2, .img-sector1 {
+    height: 650px;
+  }
+}
+
+.type5 {
+  height: 700px;
+  background-color: $dark-blue;
+  .img-home5, .img-about3 {
+    height: 700px;
+  }
+}
 
 .type12 {
   height: 630px;
   background-color: $blue;
   .img-help1 {
     height: 630px;
-    margin: 0;
     background: url('/images/help-01.jpg') left no-repeat;
   }
 }
 
-.type6, .type10, .type11 {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  .grid_3 + .grid_3 {
-    padding-left: 5px;
-  }
-}
-
 .type6 {
-  height: 550px;
+  height: 900px;
 }
 
-.type10 {
+.type10, .type15 {
   height: 700px;
   h4 {
     margin-top: 0;
+    margin-bottom: 0;
+  }
+  .btn {
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 }
 
 .type11 {
-  height: 650px;
+  height: 1200px;
   .marked-list {
     li {
       padding-bottom: 20px;
@@ -412,6 +422,7 @@ p {
 
 .type8, .type10 {
   .social-icons {
+    margin-bottom: 50px;
     li + li {
       padding-left: 35px;
     }
@@ -429,12 +440,13 @@ p {
 }
 
 .type7 {
-  height: 430px;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  height: 720px;
   background-color: $blue;
   h1 {
     font-size: 48px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
   .marked-list {
     li {
@@ -457,11 +469,9 @@ p {
 }
 
 .type8 {
-  height: 700px;
-  padding-top: 30px;
-  padding-bottom: 170px;
+  height: 870px;
   h4 {
-    margin-top: 0;
+    margin: 10px 0;
     transition: color 0.3s ease;
     &:hover, &.active {
       color: $blue;
@@ -511,13 +521,12 @@ p {
   height: 160px;
   background-color: $yellow;
   color: white;
-  border: 2px solid #dd951e;
+  border: 2px solid $yellow;
   border-radius: 50%;
   text-align: center;
   transition: color 0.3s ease;
   transition: background-color 0.3s ease;
   font-size: 70px;
-  transform: translate(35%, 0%);
   &:hover {
     color: $yellow;
     background-color: transparent;
@@ -528,9 +537,7 @@ p {
 }
 
 .type13 {
-  padding-top: 40px;
-  padding-bottom: 100px;
-  height: 200px;
+  height: 300px;
   background: url('/images/help-02.jpg') center no-repeat;
   text-align: center;
   h1 {
@@ -543,4 +550,11 @@ p {
 
 iframe {
   width: 100%;
+  a {
+    width: 100%;
+  }
+}
+
+.whitespace {
+  visibility: hidden;
 }
