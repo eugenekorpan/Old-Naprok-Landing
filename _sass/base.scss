@@ -4,7 +4,7 @@ body {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  color: $black;
+  color: #3F3669;
   min-width: 320px;
   background-color: #fff;
   overflow-x: hidden;
@@ -44,7 +44,6 @@ figcaption {
   max-width: 1200px;
   height: 100%;
   margin: auto;
-  color: #3F3669;
 
   .menu {
     overflow: hidden;
@@ -155,6 +154,19 @@ figcaption {
   }
 }
 
+.main7 {
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.footer {
+  height: 762px;
+  background: #553485; /* Old browsers */
+  background: -moz-linear-gradient(top, #553485 0%, #8160ae 50%, #684698 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #553485 0%,#8160ae 50%,#684698 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #553485 0%,#8160ae 50%,#684698 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#553485', endColorstr='#684698',GradientType=0 );
+}
 
 .lines {
   position: relative;
@@ -238,17 +250,33 @@ figcaption {
   }
 }
 
-.cards {
-  padding: 150px 0;
-  max-width: 708px;
+.partners {
+  padding: 16px;
+  max-width: 900px;
   margin: auto;
   height: 100%;
   display: flex;
 
-  // .card:first-of-type::before{
-      // .box3 {
-  // }
-  // }
+  .partner {
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: solid black 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+  }
+}
+
+.cards {
+  padding: 150px 0;
+  max-width: 708px;
+  height: 300px;
+  margin: auto;
+  height: 100%;
+  display: flex;
 
   .card {
     text-align: center;
@@ -260,19 +288,6 @@ figcaption {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-    &:before {
-      background-color: black;
-          top: 135px;
-    width: 30%;
-    height: 230px;
-
-    border-top: $border;
-    border-right: $border;
-    border-bottom: $border;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    }
 
     p {
       -webkit-margin-start: 1em;
@@ -362,5 +377,51 @@ figcaption {
     border-bottom: $border;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+  }
+}
+
+.mail {
+  padding-top: 135px;
+  margin: auto;
+  max-width: 755px;
+
+  textarea:focus, input:focus {
+    border-color: rgba(63,54,105, 0.8);
+    box-shadow: 0 1px 1px rgba(63,54,105, 0.075) inset, 0 0 8px rgba(63,54,105, 0.6);
+    outline: 0 none;
+  }
+
+  textarea {
+    margin-top: 5%;
+    width: 66%;
+    overflow: hidden;
+  }
+
+  input {
+    height: 30px;
+    width: calc(31% - 4px);
+    font-size: 18px;
+    font-family: Calibri;
+  }
+
+  input:first-of-type {
+    margin-right: 35px;
+  }
+
+  button {
+    margin-top: 45px;
+    height: 30px;
+    width: 16%;
+  }
+
+  .adress {
+    float: right;
+    color: white;
+    margin-top: 5%;
+
+    p {
+      line-height: 3px;
+      font-size: 18px;
+    }
   }
 }
