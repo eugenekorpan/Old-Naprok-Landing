@@ -347,7 +347,7 @@ figcaption {
 
   position: relative;
   bottom: 300px;
-  height: 1200px;
+  height: 1600px;
   clip-path: polygon(
     $graph-1,
     $graph-2,
@@ -382,20 +382,113 @@ figcaption {
   .row-left {
     max-width: 500px;
   }
+
+  .language {
+    position: absolute;
+    top: 219px;
+
+    b {
+      position: relative;
+      top: -45px;
+      left: 30px;
+      font-size: 18px;
+    }
+
+    p {
+      position: relative;
+      top: -50px;
+      left: 350px;
+      text-align: left;
+      line-height: 13px;
+    }
+  }
+
+  .culture {
+    position: absolute;
+    top: 435px;
+    text-align: left;
+
+    b {
+      position: relative;
+      top: -45px;
+      left: 40px;
+      font-size: 18px;
+    }
+
+    p {
+      position: relative;
+      top: -50px;
+      left: 160px;
+      text-align: left;
+      line-height: 13px;
+    }
+  }
+
+  .skills {
+    position: absolute;
+    top: 624px;
+    left: 30px;
+
+    b {
+      position: relative;
+      top: -45px;
+      left: 40px;
+      font-size: 18px;
+    }
+
+    p {
+      position: relative;
+      top: -50px;
+      left: 312px;
+      text-align: left;
+      line-height: 13px;
+    }
+  }
+
+  .test {
+    position: absolute;
+    top: 771px;
+    left: -183px;
+
+    b {
+      position: relative;
+      top: -45px;
+      left: 40px;
+      font-size: 18px;
+    }
+
+    p {
+      position: relative;
+      top: -50px;
+      left: 330px;
+      text-align: left;
+      line-height: 13px;
+    }
+  }
 }
 
 .borders {
-  .box1 {
-    height: 55px;
-    min-width: 400px;
-    top: 105px;
-    left: 415px;
+  img {
+    position: relative;
+  }
 
-    border-top: $border;
-    border-right: $border;
-    border-bottom: $border;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+  #bord_1 {
+    top: -28px;
+  }
+
+  #bord_2 {
+    top: 30px;
+    left: 115px;
+  }
+
+  #bord_3 {
+    top: 188px;
+    right: 58px;
+  }
+
+  #bord_4 {
+    top: 250px;
+    right: -138px;
   }
 }
 
@@ -435,10 +528,10 @@ figcaption {
 
   .adress {
     float: right;
-    color: white;
     margin-top: 5%;
 
     p.main {
+      color: white;
       line-height: 3px;
       font-size: 18px;
     }
