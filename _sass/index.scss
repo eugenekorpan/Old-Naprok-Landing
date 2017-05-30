@@ -249,6 +249,11 @@ figcaption {
   }
 }
 
+#img_12 {
+  position: absolute;
+  top: 42%;
+}
+
 
 .icons {
   max-width: 925px;
@@ -342,12 +347,16 @@ figcaption {
   }
 }
 
+.clip-svg {
+  position: absolute;
+}
+
 .graph {
   background: linear-gradient(rgba(223,205,232,1), rgba(223,205,232,0));
 
   position: relative;
   bottom: 300px;
-  height: 1600px;
+  height: 1430px;
   clip-path: polygon(
     $graph-1,
     $graph-2,
@@ -397,7 +406,7 @@ figcaption {
     p {
       position: relative;
       top: -50px;
-      left: 350px;
+      left: 270px;
       text-align: left;
       line-height: 13px;
     }
@@ -427,7 +436,7 @@ figcaption {
   .skills {
     position: absolute;
     top: 624px;
-    left: 30px;
+    left: 93px;
 
     b {
       position: relative;
@@ -439,7 +448,7 @@ figcaption {
     p {
       position: relative;
       top: -50px;
-      left: 312px;
+      left: 245px;
       text-align: left;
       line-height: 13px;
     }
@@ -448,7 +457,7 @@ figcaption {
   .test {
     position: absolute;
     top: 771px;
-    left: -183px;
+    left: -70px;
 
     b {
       position: relative;
@@ -460,7 +469,7 @@ figcaption {
     p {
       position: relative;
       top: -50px;
-      left: 330px;
+      left: 250px;
       text-align: left;
       line-height: 13px;
     }
@@ -506,6 +515,8 @@ figcaption {
   textarea {
     margin-top: 5%;
     width: 66%;
+    z-index: 3;
+    position: relative;
     overflow: hidden;
   }
 
