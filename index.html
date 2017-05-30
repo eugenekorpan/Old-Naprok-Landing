@@ -12,7 +12,7 @@
 
     <script src='js/main.js'></script>
     <link rel='stylesheet' href='/css/app.css'>
-    <link href='./images/favicon.ico' rel='icon' type='image/x-icon' />
+    <link href='images/logo.png' rel='icon' type='image/x-icon' />
   </head>
 	<body class='main'>
     <div class='part main1'>
@@ -141,9 +141,7 @@
           </div>
           <div class='row-left'>
             <p class='main'> The screening process includes next steps: </p>
-            <div class='borders'>
-              <img id='bord_1' src='/images/layer_7.png' />
-            </div>
+            <img class='chart' src='/images/chart.svg' />
           </div>
           <div class='language'>
             <img src='/images/language.png' />
@@ -152,9 +150,6 @@
             <p> communicates with client directly. We make sure developer's English is </p>
             <p> sufficient to prevent any communication issues during the work </p>
           </div>
-          <div class='borders'>
-            <img id='bord_2' src='/images/layer_8.png' />
-          </div>
           <div class='culture'>
             <img src='/images/culture.png' />
             <b> Personality and Culture </b>
@@ -162,17 +157,11 @@
             <p> team. Before any work starts we learn about develoepr as much as possible to </p>
             <p> make sure there won't be any cultural conflicts or personal issues </p>
           </div>
-          <div class='borders'>
-            <img id='bord_3' src='/images/layer_5.png' />
-          </div>
           <div class='skills'>
             <img src='/images/skills.png' />
             <b> Skills </b>
             <p> we check technical skills of every developer to make sure they </p>
             <p> correspond to client's needs </p>
-          </div>
-          <div class='borders'>
-            <img id='bord_4' src='/images/layer_6.png' />
           </div>
           <div class='test'>
             <img src='/images/test.png' />
@@ -200,23 +189,25 @@
       </div>
     </div>
     <div class='part footer'>
+      <img id='footer' src='/images/footer.svg' />
       <div class='wrapper'>
-        <img id='img_12' src='images/layer_202.png' />
         <div class='mail'>
-          <input placeholder='Your Name' />
-          <input placeholder='Your Email' />
-          <br />
-          <textarea rows='12' placeholder='Message'></textarea>
-          <div class='adress'>
-            <p class='main'> Naprok outstaffing, LLC </p>
-            <p class='main'> 200 Shevchenka blvd, </p>
-            <p class='main'> 18000, Cherkasy, </p>
-            <p class='main'> Ukraine </p>
-            <p class='main'> contact@naprok.com </p>
-            <p class='main'> +380977535731 </p>
-          </div>
-          <br />
-          <button> Send </button>
+          <form action="mailto:eugene@naprok.com" method="post" enctype="text/plain">
+            <input placeholder='Your Name' type="text" name="name" />
+            <input placeholder='Your Email' type="text" name='email' />
+            <br />
+            <textarea rows='12' placeholder='Message'  name='message' size='50'></textarea>
+            <div class='adress'>
+              <p class='main'> Naprok outstaffing, LLC </p>
+              <p class='main'> 200 Shevchenka blvd, </p>
+              <p class='main'> 18000, Cherkasy, </p>
+              <p class='main'> Ukraine </p>
+              <p class='main'> contact@naprok.com </p>
+              <p class='main'> +380977535731 </p>
+            </div>
+            <br />
+            <input type='submit' value='Send' />
+          </form>
         </div>
       </div>
     </div>

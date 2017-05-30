@@ -175,6 +175,7 @@ figcaption {
 
 .main7 {
   padding-bottom: 200px;
+  padding-top: 200px;
   text-align: center;
 }
 
@@ -352,34 +353,15 @@ figcaption {
 }
 
 .graph {
-  background: linear-gradient(rgba(223,205,232,1), rgba(223,205,232,0));
-
+  background: url(/images/background.svg) no-repeat;
+  background-size: cover;
   position: relative;
-  bottom: 300px;
   height: 1430px;
-  clip-path: polygon(
-    $graph-1,
-    $graph-2,
-    $graph-3,
-    $graph-4,
-    $graph-5,
-    $graph-6,
-    $graph-7,
-    $graph-8,
-    $graph-9,
-    $graph-10,
-    $graph-11,
-    $graph-12,
-    100% 100%,
-    0% 100%
-  );
-  clip-path: url(#clipper);
-
 }
 
 .infograph {
   position: relative;
-  top: 500px;
+  top: 350px;
   margin: auto;
   max-width: 800px;
   text-align: center;
@@ -395,6 +377,7 @@ figcaption {
   .language {
     position: absolute;
     top: 219px;
+    left: 67px;
 
     b {
       position: relative;
@@ -476,29 +459,11 @@ figcaption {
   }
 }
 
-.borders {
-  img {
-    position: relative;
-  }
-
-  #bord_1 {
-    top: -28px;
-  }
-
-  #bord_2 {
-    top: 30px;
-    left: 115px;
-  }
-
-  #bord_3 {
-    top: 188px;
-    right: 58px;
-  }
-
-  #bord_4 {
-    top: 250px;
-    right: -138px;
-  }
+.chart {
+  position: relative;
+  left: 147px;
+  top: 145px;
+  transform: scale(1.6, 1.6);
 }
 
 .mail {
@@ -531,10 +496,12 @@ figcaption {
     margin-right: 35px;
   }
 
-  button {
+  input:last-of-type {
     margin-top: 45px;
     height: 30px;
     width: 16%;
+    position: relative;
+    z-index: 1;
   }
 
   .adress {
@@ -547,4 +514,9 @@ figcaption {
       font-size: 18px;
     }
   }
+}
+
+#footer {
+  position: absolute;
+  top: 307px;
 }
