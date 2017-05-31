@@ -177,7 +177,6 @@ figcaption {
 }
 
 .footer {
-  height: 762px;
   background: #553485;
   background: -moz-linear-gradient(top, #553485 0%, #8160ae 50%, #684698 100%);
   background: -webkit-linear-gradient(top, #553485 0%,#8160ae 50%,#684698 100%);
@@ -516,4 +515,17 @@ figcaption {
 #footer {
   position: absolute;
   top: 307px;
+}
+
+.footer_bottom {
+  margin-top: 250px;
+  padding: 25px;
+  border-top: 1px solid #cccccc;
+  span {
+    display: block;
+    font-size: 14px;
+    color: #cccccc;
+    text-align: center;
+    vertical-align: bottom;
+  }
 }
