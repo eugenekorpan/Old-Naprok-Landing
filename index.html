@@ -9,231 +9,168 @@
     <title>IT Outstaffing, Software Outsourcing, Web Application Development, Custom Software Development Company | Naprok Outstaffing</title>
 
     <meta name='description' content='Staff your team easily'/>
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src='js/main.js'></script>
-    <link rel='stylesheet' href='/css/app.css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel='stylesheet' href='css/app.css'>
     <link href='images/favicon.ico' rel='icon' type='image/x-icon' />
   </head>
-	<body class='main'>
-    <div class='part main1'>
-      <div class='main2'>
-        <div id='stripe'>
-          <div class='wrapper'>
-            <img id='logo' src='/images/logo.png' />
+	<body>
+    <header>
+    <div class="top-line">
+      <div class="container">
+          <div class="col-md-3">
+            <a href="/" class='logo'><img src='images/logo.png' alt="naprok" /></a>
+          </div>
+          <div class="col-md-7 col-md-offset-2">
             <div class='nav' id='nav'>
-              <a href='/'> Home </a>
-              <a href='#about'> About </a>
-              <a href='#why'> Why </a>
-              <a href='#screening'> Screening </a>
-              <a href='#partners'> Partners </a>
-              <a href='javascript:void(0);' class='conv' onclick='myFunction()'>&#9776;</a>
-            </div>
+                <a href='#home'> Home </a>
+                <!--<a href='#about'> About </a>-->
+                <a href='#why'> Why </a>
+                <a href='#screening'> Screening </a>
+                <a href='#partners'> Partners </a>
+                <a href='#mail'> Contact </a>
+              </div>
           </div>
         </div>
-        <div class='wrapper'>
-          <div class='main3'>
-            <div class='vertical'>
-              <h1 class='main'> Are you sick and tired of recruiting right IT person? </h1>
-              <br />
-              <p class='main'> Solve your staffing challenges with outstaffing </p>
-              <p class='main'> And we are here to help you </p>
-            </div>
+      </div>
+      <div class="home" id="home">
+        <div class="container">
+          <h1>Lorem Ipsum</h1>
+          <h2>is simply dummy text of the printing <br /> and typesetting industry</h2>
+          <div class="col-md-2 col-md-offset-5 button">
+            <a class="btn btn-contact" href="#mail" >Contact us</a>
           </div>
         </div>
+      </div>
+    </header> 
+
+    <div class="why" id="why"> 
+      <div class="container">
+        <h2><span>Lorem Ipsum</span><br /> is simply dummy text of the printing and typesetting industry</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </p> 
+        <div class="icons">
+          <div class="col-md-4">
+            <div class="icon">
+              <img src="images/battery.png" alt="" />
+            </div>
+            <p>Lorem Ipsum <br /> is simply dummy text</p>
+          </div>
+          <div class="col-md-4">
+            <div class="icon">
+              <img src="images/people.png" alt="" />
+            </div>
+            <p>Lorem Ipsum <br /> is simply dummy text</p>
+          </div>
+          <div class="col-md-4">
+            <div class="icon">
+              <img src="images/bell.png" alt="" />
+            </div>
+            <p>Lorem Ipsum <br /> is simply dummy text</p>
+          </div>
+          <div class="col-md-4">
+            <div class="icon">
+              <img src="images/stairs.png" alt="" />
+            </div>
+            <p>Lorem Ipsum <br /> is simply dummy text</p>
+          </div>
+          <div class="col-md-4">
+            <div class="icon">
+              <img src="images/mannager.png" alt="" />
+            </div>
+            <p>Lorem Ipsum <br /> is simply dummy text</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="split-side"></div>    
+
+    <div class="screening" id="screening"> 
+      <div class="container">
+          <h2><span>Lorem Ipsum</span><br /> is simply dummy text of the printing and typesetting industry</h2>
+        <div class="col-md-2 col-md-offset-2 col-xs-12">
+          <img src="images/language.png">
+        </div>
+        <div class="col-md-6">
+          <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+        </div>
+        <div class="col-md-2 col-md-offset-2 col-xs-12">
+          <img src="images/culture.png">
+        </div>
+        <div class="col-md-6">
+          <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+        </div>
+        <div class="col-md-2 col-md-offset-2 col-xs-12">
+          <img src="images/test.png">
+        </div>
+        <div class="col-md-6">
+           <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+        </div>
+        <div class="col-md-2 col-md-offset-2 col-xs-12">
+          <img src="images/skills.png">
+        </div>
+        <div class="col-md-6">
+           <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+        </div>
+      </div> 
+    </div>
+
+    <div class="partners" id="partners">
+      <div class="container">
+        <h2>Partners</h2>
+        <div class="col-md-3 partner"><a href=""><img src="images/logos/active-bridge.jpg" alt=""></a></div>
+        <div class="col-md-3 partner"><a href=""><img src="images/logos/milestep.png" alt=""></a></div>
+        <div class="col-md-3 partner"><a href=""><img src="images/logos/defaultvalue.png" alt=""></a></div>
+        <div class="col-md-3 partner"><a href=""><img src="images/logos/everlabs.png" alt=""></a></div>
       </div>
     </div>
-    <div id='about' class='part main4'>
-      <div class='wrapper'>
-        <div class='lines'>
-          <img id='img_1' src='/images/layer_15.png' />
-          <img id='img_2' src='/images/layer_14.png' />
-          <img id='img_3' src='/images/layer_11.png' />
-          <img id='img_4' src='/images/layer_13_0.png' />
-          <img id='img_5' src='/images/layer_10_0.png' />
-          <img id='img_6' src='/images/layer_12_0.png' />
-          <img id='img_7' src='/images/layer_16.png' />
-          <img id='img_8' src='/images/layer_9.png' />
-          <img id='img_9' src='/images/layer_9_0.png' />
-        </div>
-        <div class='collaborate'>
-          <h2 class='main'> Naprok collaborate with many software development vendors, screen engineers and </h2>
-          <h2 class='main'> build network of proven hightly skilled IT geeks </h2>
-          <br />
-          <p class='main'> We carefully listen to clients needs and solve their pain with the perfect match specialist </p>
-          <br />
-          <p class='main'> With Outstaffing you get: </p>
-        </div>
-        <div class='lines'>
-          <img id='img_10' src='/images/layer_172.png' />
-          <img id='img_11' src='/images/layer_17_1.png' />
-        </div>
-        <div class='icons'>
-          <div class='column'>
-            <div class='line'>
-              <figure>
-                <img src='/images/battery.png' />
-                <figcaption> Extra resources right away </figcaption>
-              </figure>
+
+    <footer>
+      <div class="container">
+          <form>
+            <div class="mail col-md-6 col-md-offset-1" id="mail">
+              <div class="col-md-6">
+                <input type="text" placeholder="full name" required="required">
+              </div>
+              <div class="col-md-6">
+                <input type="email" placeholder="email" required="required">
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-md-12">
+                <textarea name="text"  placeholder="message" required="required"></textarea>
+              </div>
+              <div class="col-md-4">
+                <button class="btn" type="submit">send</button>
+              </div>
             </div>
-            <div class='line'>
-              <figure>
-                <img src='/images/people.png' />
-                <figcaption> No painful recruiting process </figcaption>
-              </figure>
+            <div class="col-md-4 col-md-offset-1">
+              <div class="adress">
+                <p><span>Naprok outstaffing, LLC</span></p>
+                <p> 200 Shevchenka blvd, </p>
+                <p> 18000, Cherkasy, </p>
+                <p><span> Ukraine </span></p>
+                <p> contact@naprok.com </p>
+                <p> +380977535731 </p>
+              </div>
             </div>
-            <div class='line'>
-              <figure>
-                <img src='/images/bell.png' />
-                <figcaption> No cost to organize workspace and tools </figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class='column'>
-            <div class='line'>
-              <figure>
-                <img src='/images/stairs.png' />
-                <figcaption> No bureaucracy issues </figcaption>
-              </figure>
-            </div>
-            <div class='line'>
-              <figure>
-                <img src='/images/mannager.png' />
-                <figcaption> You manage the specialist as if it's your employee </figcaption>
-              </figure>
-            </div>
-            <div class='line'>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='part main5'>
-      <div class='overlay'>
-      </div>
-    </div>
-    <div id='why' class='part main6'>
-      <div class='borders'>
-        <div class='absolute box3'></div>
-      </div>
-        <div class='cards'>
-          <div class='card'>
-            <p class='main'> WE TAKE CARE OF ALL RECRUITING PROCESS FOR FREE </p>
-            <div class='stribox'> </div>
-          </div>
-          <div class='card'>
-            <p class='main'> SCREENING PROCESS. WE PROVIDE ONLY PROVED DEVELOPERS </p>
-            <img src='/images/cross.png' />
-          </div>
-          <div class='card'>
-            <p class='main'> LOREM IPSUM DOLOR SIT AMET, ADIPSCING ELIT </p>
-            <img src='/images/clock.png' />
-          </div>
-          <div class='card'>
-            <p class='main'> LOREM IPSUM DOLOR SIT AMET, ADIPSCING ELIT </p>
-            <img src='/images/clock.png' />
-          </div>
-        </div>
-      <div class='graph'>
-        <div id='screening' class='infograph'>
-          <div class='row'>
-            <h1 class='main'> To make sure clients get provided with truly skilled and experienced </h1>
-            <h1 class='main'> developers we personally screen each of them individually </h1>
-            <br />
-          </div>
-          <div class='row-left'>
-            <p class='main'> The screening process includes next steps: </p>
-            <img class='chart' src='/images/chart.svg' />
-          </div>
-          <div class='language'>
-            <img src='/images/language.png' />
-            <b> Language </b>
-            <p> communication is very important and with outstaffing every developer </p>
-            <p> communicates with client directly. We make sure developer's English is </p>
-            <p> sufficient to prevent any communication issues during the work </p>
-          </div>
-          <div class='culture'>
-            <img src='/images/culture.png' />
-            <b> Personality and Culture </b>
-            <p> great skills doesn't mean productivity when one can not work as a part of the </p>
-            <p> team. Before any work starts we learn about develoepr as much as possible to </p>
-            <p> make sure there won't be any cultural conflicts or personal issues </p>
-          </div>
-          <div class='skills'>
-            <img src='/images/skills.png' />
-            <b> Skills </b>
-            <p> we check technical skills of every developer to make sure they </p>
-            <p> correspond to client's needs </p>
-          </div>
-          <div class='test'>
-            <img src='/images/test.png' />
-            <b> Test project </b>
-            <p> our engineers prepared special requirements to test the project to find out </p>
-            <p> developer's problem-solving ability </p>
-          </div>
-        </div>
-      </div>
-      <svg class='clip-svg'>
-        <defs>
-          <clipPath id='clipper' clipPathUnits='objectBoundingBox'>
-            <polygon points='0 0.37, 0.05 0.35, 0.13 0.33, 0.21 0.32, 0.28 0.28, 0.46 0.25, 0.56 0.23, 0.67 0.2, 0.79 0.2, 0.89 0.14, 0.98 0.17, 1 0.18, 1 1, 0 1' />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-    <div class='part main7' id='partners'>
-      <h1 class='main'> PARTNERS </h1>
-      <div class='partners'>
-        <div class='partner'>
-          <a href='http://active-bridge.com' target='_blank'>
-            <img src='/images/logos/active-bridge.jpg' />
-          </a>
-        </div>
-        <div class='partner'>
-          <a href='http://milestep.io' target='_blank'>
-            <img src='/images/logos/milestep.png' />
-          </a>
-        </div>
-        <div class='partner'>
-          <a href='http://default-value.com' target='_blank'>
-            <img src='/images/logos/defaultvalue.png' />
-          </a>
-        </div>
-        <div class='partner'>
-          <a href='http://everlabs.com/' target='_blank'>
-            <img src='/images/logos/everlabs.png' />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class='part footer'>
-      <img id='footer' src='/images/footer.svg' />
-      <div class='wrapper'>
-        <div class='mail'>
-          <form action="mailto:eugene@naprok.com" method="post" enctype="text/plain">
-            <input placeholder='Your Name' type="text" name="name" />
-            <input placeholder='Your Email' type="text" name='email' />
-            <br />
-            <textarea rows='12' placeholder='Message'  name='message' size='50'></textarea>
-            <div class='adress'>
-              <p class='main'> Naprok outstaffing, LLC </p>
-              <p class='main'> 200 Shevchenka blvd, </p>
-              <p class='main'> 18000, Cherkasy, </p>
-              <p class='main'> Ukraine </p>
-              <p class='main'> contact@naprok.com </p>
-              <p class='main'> +380977535731 </p>
-            </div>
-            <br />
-            <input type='submit' value='Send' />
           </form>
         </div>
-
-        <div class='footer_bottom'>
-          <span>
-            Copyright © 2017, Naprok Outstaffing, LLC
-          </span>
+        <div class="footer-bottom">
+          <p>Copyright © 2017, Naprok Outstaffing, LLC</p>
         </div>
-      </div>
-    </div>
-
+    </footer>
+          
  </body>
  </html>
