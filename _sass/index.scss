@@ -3,14 +3,14 @@ h1{
   font-family: HelveticaBold;
   color: #fff;
   margin: 0;
-  font-size: 40px;
+  font-size: 36px;
 }
 
 h2{
   text-align: center;
   font-family: Helvetica;
   margin: 0;
-  font-size: 26px;
+  font-size: 24px;
 }
 
 a, a:active, a:visited, a:link {
@@ -29,6 +29,7 @@ a:focus{
 p{
   font-family: Helvetica;
   font-size: 18px;
+  text-indent: 0;
 }
 
 span{
@@ -59,6 +60,7 @@ header{
   display: block;
   color: #fff;
   background-color: $dark-blue;
+  opacity: 0.75;
 }
 
 .btn-contact{
@@ -75,6 +77,7 @@ button{
 -webkit-box-shadow: 0px 0px 14px 1px rgba(32,31,33,1);
 -moz-box-shadow: 0px 0px 14px 1px rgba(32,31,33,1);
 box-shadow: 0px 0px 14px 1px rgba(32,31,33,1);
+opacity: 1;
 }
 
 .top-line{
@@ -113,6 +116,11 @@ box-shadow: 0px 0px 14px 1px rgba(32,31,33,1);
 }
 
 .why{
+
+  .indent{
+    text-indent: 20px;
+    margin: 0;
+  }
   p{
     color: $dark-blue;
   }
@@ -151,7 +159,7 @@ box-shadow: 0px 0px 14px 1px rgba(32,31,33,1);
 
   background: url("../images/bg.svg") no-repeat top -50px left, 
               url("../images/bg-2.svg") no-repeat bottom -40px right;
-  min-height: 1176px;
+  min-height: 1270px;
 
   h2{
     color: $dark-blue;
@@ -204,7 +212,7 @@ footer{
   textarea{
       width: 100%;
       height: 195px;
-      border: 3px solid $dark-blue;
+      border: 1px solid $dark-blue;
       background-color: #fff;
       padding: 12px 20px 12px 20px;
   }
@@ -231,3 +239,4 @@ footer{
     margin: 0;
    }
 }
+
