@@ -41,12 +41,19 @@ p {
   font-size: 18px;
   text-indent: 0; }
 
+ul {
+  list-style: none;
+  margin: 0; }
+
+li {
+  display: inline-block; }
+
 span {
   font-family: HelveticaBold; }
 
 header {
   background-image: url("../images/header-bg.png");
-  min-height: 606px;
+  min-height: 610px;
   background-repeat: repeat-x;
   background-position: top center;
   background-attachment: fixed;
@@ -56,6 +63,9 @@ header {
   header .home h2 {
     margin-bottom: 30px;
     color: #fff; }
+
+.button {
+  margin-bottom: 30px; }
 
 .btn, button {
   border: 3px solid #38335A;
@@ -91,6 +101,35 @@ button {
     height: 75px; }
   .top-line .nav {
     margin-top: 10px; }
+  .top-line #touch-menu {
+    background: url("../images/mobile-nav.png") no-repeat right;
+    color: #3c2f2f;
+    display: none;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 24px 50px; }
+  @media (max-width: 992px) {
+    .top-line .top_menu {
+      display: none; }
+    .top-line .top_menu li {
+      background-color: #fff;
+      opacity: 0.8;
+      display: block;
+      height: 58px;
+      text-align: center; }
+    .top-line #touch-menu {
+      display: block;
+      text-align: center; }
+    .top-line .top_menu {
+      opacity: 0.9;
+      padding: 0;
+      margin: 0;
+      text-align: center; }
+    .top-line a {
+      text-align: center; } }
   .top-line .nav a, .top-line a:active, .top-line a:visited, .top-line a:link {
     float: left;
     display: block;
@@ -191,17 +230,3 @@ footer {
   margin-top: 250px; }
   .footer-bottom p {
     margin: 0; }
-
-@media (max-width: 992px) {
-  .nav {
-    display: none; }
-  #touch-menu {
-    display: block;
-    text-align: center; }
-  .nav {
-    background-color: #383838;
-    opacity: 0.9;
-    padding: 0;
-    margin: 0; }
-  .header-nav.fixed ul {
-    margin-top: 0; } }
