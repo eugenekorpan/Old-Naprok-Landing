@@ -1,32 +1,24 @@
-/* media for main page */
-
-@media only screen and (max-width: 1200px) {
-  .lines {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .nav a:not(:first-child) {
+@media (max-width: 992px)
+{
+  .nav
+  {
     display: none;
   }
 
-  .nav .conv {
-    display: block !important;
-  }
-
-  .nav.responsive {
-    position: relative;
-  }
-
-  .nav.responsive .conv {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .nav.responsive a {
-    float: none;
+  #touch-menu
+  {
     display: block;
-    text-align: left;
+    text-align: center;
+  }
+
+  .nav{
+    background-color: #383838;
+    opacity: 0.9;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-nav.fixed ul{
+    margin-top: 0;
   }
 }
