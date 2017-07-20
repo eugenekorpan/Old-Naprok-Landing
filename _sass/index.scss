@@ -58,7 +58,7 @@ header{
   text-align: center;
   display: block;
   color: #fff;
-  background: none;
+  background-color: $dark-blue;
 }
 
 .btn-contact{
@@ -71,9 +71,10 @@ button{
 }
 
 .btn:hover{
-  font-family: HelveticaBold;
   color: #fff;
-  background-color: $dark-blue;
+-webkit-box-shadow: 0px 0px 14px 1px rgba(32,31,33,1);
+-moz-box-shadow: 0px 0px 14px 1px rgba(32,31,33,1);
+box-shadow: 0px 0px 14px 1px rgba(32,31,33,1);
 }
 
 .top-line{
@@ -210,7 +211,7 @@ footer{
 
   input{
       width: 100%;
-      border: 3px solid $dark-blue;
+      border: 1px solid $dark-blue;
       background-color: #fff;
       margin-bottom: 12px;
       height: 45px;
