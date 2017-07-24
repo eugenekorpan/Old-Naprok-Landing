@@ -160,6 +160,8 @@ button {
   .icons p {
     color: #7974C5;
     padding-bottom: 55px; }
+  .icons img {
+    width: 160px; }
 
 .icon {
   height: 150px; }
@@ -183,7 +185,8 @@ button {
     color: #38335A;
     margin-top: 100px; }
   .screening img {
-    padding-top: 100px; }
+    padding-top: 100px;
+    width: 95px; }
 
 .partners {
   background-color: #F2F0F0;
