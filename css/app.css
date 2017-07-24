@@ -97,7 +97,7 @@ button {
     text-align: center;
     height: 75px;
     margin: 0;
-    padding: 0; }
+    padding-top: 0; }
   .top-line .logo img {
     height: 75px; }
   .top-line #touch-menu {
@@ -110,8 +110,28 @@ button {
     margin-bottom: 20px;
     text-align: center;
     padding: 24px 50px; }
+  @media (max-width: 992px) {
+    .top-line .top_menu {
+      display: none; }
+    .top-line .nav {
+      margin-top: 12px; }
+    .top-line .top_menu li {
+      background-color: #fff;
+      opacity: 0.8;
+      display: block;
+      height: 85px;
+      text-align: center; }
+    .top-line #touch-menu {
+      display: block;
+      text-align: center; }
+    .top-line .top_menu {
+      opacity: 0.9;
+      padding: 0;
+      margin: 0;
+      text-align: center; }
+    .top-line .nav a {
+      text-align: center; } }
   .top-line .nav a, .top-line .nav a:active, .top-line .nav a:visited, .top-line .nav a:link {
-    float: left;
     display: block;
     text-align: center;
     line-height: 44px;
@@ -122,26 +142,6 @@ button {
     color: #38335A; }
   .top-line .nav a:hover {
     background-color: #bebbc1; }
-
-@media (max-width: 992px) {
-  .top_menu {
-    display: none; }
-  .top_menu li {
-    background-color: #fff;
-    opacity: 0.8;
-    display: block;
-    height: 58px;
-    text-align: center; }
-  #touch-menu {
-    display: block;
-    text-align: center; }
-  .top_menu {
-    opacity: 0.9;
-    padding: 0;
-    margin: 0;
-    text-align: center; }
-  a {
-    text-align: center; } }
 
 .why .indent {
   text-indent: 20px;

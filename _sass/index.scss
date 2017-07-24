@@ -102,7 +102,7 @@ opacity: 1;
     text-align: center;
     height: 75px;
     margin: 0;
-    padding: 0; 
+    padding-top: 0; 
   }
 
   .logo img{
@@ -123,34 +123,23 @@ padding: 24px 50px;
 
 }
 
-.nav a, .nav a:active, .nav a:visited, .nav a:link {
-    float: left;
-    display: block;
-    text-align: center;
-    line-height: 44px;
-    padding: 20.5px 18px;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Helvetica;
-    color: $dark-blue;
-  }
-  .nav a:hover{
-    background-color: #bebbc1;
-  }
-}
-
   @media (max-width: 992px)
 {
   .top_menu
   {
     display: none;
   }
+
+  .nav{
+    margin-top: 12px;
+  }
+
   .top_menu li
   {
     background-color: #fff;
     opacity: 0.8;
     display: block;
-    height: 58px;
+    height: 85px;
     text-align: center;
   }
   #touch-menu
@@ -166,8 +155,23 @@ padding: 24px 50px;
     text-align: center;
   }
 
-  a{
+  .nav a{
     text-align: center;
+  }
+}
+
+.nav a, .nav a:active, .nav a:visited, .nav a:link {
+    display: block;
+    text-align: center;
+    line-height: 44px;
+    padding: 20.5px 18px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Helvetica;
+    color: $dark-blue;
+  }
+  .nav a:hover{
+    background-color: #bebbc1;
   }
 }
 
