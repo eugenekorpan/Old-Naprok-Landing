@@ -93,29 +93,35 @@ button {
   height: 85px;
   background-color: #fff;
   opacity: 0.8; }
-
-.logo {
-  text-align: center;
-  height: 75px;
-  margin: 0;
-  padding: 0 !important; }
-
-.logo:hover {
-  background-color: none !important; }
-
-.logo img {
-  height: 75px; }
-
-#touch-menu {
-  background: url("../images/mobile-nav.png") no-repeat right;
-  color: #3c2f2f;
-  display: none;
-  font-size: 18px;
-  line-height: 40px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 24px 50px; }
+  .top-line .logo {
+    text-align: center;
+    height: 75px;
+    margin: 0;
+    padding: 0; }
+  .top-line .logo img {
+    height: 75px; }
+  .top-line #touch-menu {
+    background: url("../images/mobile-nav.png") no-repeat right;
+    color: #3c2f2f;
+    display: none;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 24px 50px; }
+  .top-line .nav a, .top-line .nav a:active, .top-line .nav a:visited, .top-line .nav a:link {
+    float: left;
+    display: block;
+    text-align: center;
+    line-height: 44px;
+    padding: 20.5px 18px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #38335A; }
+  .top-line .nav a:hover {
+    background-color: #bebbc1; }
 
 @media (max-width: 992px) {
   .top_menu {
@@ -136,20 +142,6 @@ button {
     text-align: center; }
   a {
     text-align: center; } }
-
-.nav a, a:active, a:visited, a:link {
-  float: left;
-  display: block;
-  text-align: center;
-  line-height: 44px;
-  padding: 20.5px 18px;
-  text-decoration: none;
-  font-size: 18px;
-  font-family: Helvetica;
-  color: #38335A; }
-
-.nav a:hover {
-  background-color: #cfccd1; }
 
 .why .indent {
   text-indent: 20px;
