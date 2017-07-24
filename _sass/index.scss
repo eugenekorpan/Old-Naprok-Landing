@@ -97,20 +97,23 @@ opacity: 1;
   height: 85px;
   background-color: #fff;
   opacity: 0.8;
+}
 
   .logo{
     text-align: center;
     height: 75px;
     margin: 0;
+    padding: 0 !important;
+  }
+
+  .logo:hover{
+    background-color: none !important;
   }
 
   .logo img{
     height: 75px;
   }
 
-  .nav{
-    margin-top: 10px;
-  }
 
   #touch-menu
 {
@@ -163,16 +166,17 @@ padding: 24px 50px;
     display: block;
     text-align: center;
     line-height: 44px;
-    padding: 6px 18px;
+    padding: 20.5px 18px;
     text-decoration: none;
     font-size: 18px;
     font-family: Helvetica;
     color: $dark-blue;
   }
-  a:hover{
-    text-decoration-line: underline;
+
+  .nav a:hover{
+    background-color: #cfccd1;
   }
-}
+
 
 .why{
 

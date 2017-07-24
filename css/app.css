@@ -93,55 +93,63 @@ button {
   height: 85px;
   background-color: #fff;
   opacity: 0.8; }
-  .top-line .logo {
-    text-align: center;
-    height: 75px;
-    margin: 0; }
-  .top-line .logo img {
-    height: 75px; }
-  .top-line .nav {
-    margin-top: 10px; }
-  .top-line #touch-menu {
-    background: url("../images/mobile-nav.png") no-repeat right;
-    color: #3c2f2f;
-    display: none;
-    font-size: 18px;
-    line-height: 40px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 24px 50px; }
-  @media (max-width: 992px) {
-    .top-line .top_menu {
-      display: none; }
-    .top-line .top_menu li {
-      background-color: #fff;
-      opacity: 0.8;
-      display: block;
-      height: 58px;
-      text-align: center; }
-    .top-line #touch-menu {
-      display: block;
-      text-align: center; }
-    .top-line .top_menu {
-      opacity: 0.9;
-      padding: 0;
-      margin: 0;
-      text-align: center; }
-    .top-line a {
-      text-align: center; } }
-  .top-line .nav a, .top-line a:active, .top-line a:visited, .top-line a:link {
-    float: left;
+
+.logo {
+  text-align: center;
+  height: 75px;
+  margin: 0;
+  padding: 0 !important; }
+
+.logo:hover {
+  background-color: none !important; }
+
+.logo img {
+  height: 75px; }
+
+#touch-menu {
+  background: url("../images/mobile-nav.png") no-repeat right;
+  color: #3c2f2f;
+  display: none;
+  font-size: 18px;
+  line-height: 40px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 24px 50px; }
+
+@media (max-width: 992px) {
+  .top_menu {
+    display: none; }
+  .top_menu li {
+    background-color: #fff;
+    opacity: 0.8;
     display: block;
-    text-align: center;
-    line-height: 44px;
-    padding: 6px 18px;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Helvetica;
-    color: #38335A; }
-  .top-line a:hover {
-    text-decoration-line: underline; }
+    height: 58px;
+    text-align: center; }
+  #touch-menu {
+    display: block;
+    text-align: center; }
+  .top_menu {
+    opacity: 0.9;
+    padding: 0;
+    margin: 0;
+    text-align: center; }
+  a {
+    text-align: center; } }
+
+.nav a, a:active, a:visited, a:link {
+  float: left;
+  display: block;
+  text-align: center;
+  line-height: 44px;
+  padding: 20.5px 18px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Helvetica;
+  color: #38335A; }
+
+.nav a:hover {
+  background-color: #cfccd1; }
 
 .why .indent {
   text-indent: 20px;
