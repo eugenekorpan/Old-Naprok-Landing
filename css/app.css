@@ -157,7 +157,8 @@ button {
   margin-top: 60px; }
   .icons p {
     color: #7974C5;
-    padding-bottom: 55px; }
+    padding-bottom: 55px;
+    padding-top: 30px; }
   .icons img {
     width: 160px; }
 
