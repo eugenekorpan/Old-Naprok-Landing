@@ -38,8 +38,7 @@ a:focus {
 
 p {
   font-family: Helvetica;
-  font-size: 18px;
-  text-indent: 0; }
+  font-size: 18px; }
 
 ul {
   list-style: none;
@@ -143,16 +142,15 @@ button {
   .top-line .nav a:hover {
     background-color: #bebbc1; }
 
-.why .indent {
-  text-indent: 20px;
-  margin: 0; }
-
-.why p {
-  color: #38335A; }
-
-.why h2 {
-  margin-top: 60px;
-  color: #38335A; }
+.why {
+  text-align: center; }
+  .why p {
+    color: #38335A;
+    margin: 0; }
+  .why h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #38335A; }
 
 .icons {
   text-align: center;

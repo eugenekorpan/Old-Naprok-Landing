@@ -29,7 +29,6 @@ a:focus{
 p{
   font-family: Helvetica;
   font-size: 18px;
-  text-indent: 0;
 }
 
 ul{
@@ -176,17 +175,16 @@ padding: 24px 50px;
 }
 
 .why{
+  text-align: center;
 
-  .indent{
-    text-indent: 20px;
-    margin: 0;
-  }
   p{
     color: $dark-blue;
+    margin: 0;
   }
 
   h2{
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   color: $dark-blue;
   }
 }
