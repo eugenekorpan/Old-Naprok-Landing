@@ -182,6 +182,18 @@ padding: 24px 50px;
     margin: 0;
   }
 
+  .about{
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  @media (max-width: 992px){
+    .about{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   h2{
   margin-top: 45px;
   margin-bottom: 45px;
