@@ -16,3 +16,14 @@ function myFunction() {
     });
 });
 
+jQuery(function($) {
+            $(window).scroll(function(){
+                if($(this).scrollTop()>690){
+                    $('.top-line').addClass('fixed');
+
+                }
+                else if ($(this).scrollTop()<690){
+                    $('.top-line').removeClass('fixed');
+                }
+            });
+        });
