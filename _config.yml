@@ -1,5 +1,7 @@
 baseurl: ''
-url: 'http://naprok.com'
+url: https://www.naprok.com  
+enforce_ssl: www.naprok.com
+
 sass:
   style: :compressed
 
