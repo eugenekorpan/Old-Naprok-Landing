@@ -147,6 +147,8 @@ button {
   .why p {
     color: #38335A;
     margin: 0; }
+  .why .about {
+    min-width: 300px; }
   .why h2 {
     margin-top: 45px;
     margin-bottom: 45px;
