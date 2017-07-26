@@ -110,15 +110,14 @@ opacity: 1;
 
   #touch-menu
 {
-  background: url("../images/mobile-nav.png") no-repeat right;
+  background: url("../images/mobile-nav.svg") no-repeat right;
 color: #3c2f2f;
 display: none;
 font-size: 18px;
 line-height: 40px;
-margin-top: 5px;
-margin-bottom: 20px;
+margin-bottom: 10px;
 text-align: center;
-padding: 24px 50px;
+padding: 38px 50px 25px 50px;
 
 }
 
@@ -180,6 +179,10 @@ padding: 24px 50px;
   p{
     color: $dark-blue;
     margin: 0;
+  }
+
+  .about{
+    min-width: 300px;
   }
 
   h2{
