@@ -12,6 +12,28 @@
   font-weight: normal;
   font-style: normal; }
 
+@media (max-width: 992px) {
+  .top_menu {
+    display: none; }
+  .nav {
+    margin-top: 12px; }
+  .top_menu li {
+    background-color: #fff;
+    opacity: 0.8;
+    display: block;
+    height: 85px;
+    text-align: center; }
+  #touch-menu {
+    display: block;
+    text-align: center; }
+  .top_menu {
+    opacity: 0.9;
+    padding: 0;
+    margin: 0;
+    text-align: center; }
+  .nav a {
+    text-align: center; } }
+
 h1 {
   text-align: center;
   font-family: HelveticaBold;

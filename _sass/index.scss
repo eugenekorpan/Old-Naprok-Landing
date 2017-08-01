@@ -121,42 +121,7 @@ padding: 38px 50px 25px 50px;
 
 }
 
-  @media (max-width: 992px)
-{
-  .top_menu
-  {
-    display: none;
-  }
-
-  .nav{
-    margin-top: 12px;
-  }
-
-  .top_menu li
-  {
-    background-color: #fff;
-    opacity: 0.8;
-    display: block;
-    height: 85px;
-    text-align: center;
-  }
-  #touch-menu
-  {
-    display: block;
-    text-align: center;
-  }
-
-  .top_menu{
-    opacity: 0.9;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-
-  .nav a{
-    text-align: center;
-  }
-}
+@import 'media';
 
 .nav a, .nav a:active, .nav a:visited, .nav a:link {
     display: block;
