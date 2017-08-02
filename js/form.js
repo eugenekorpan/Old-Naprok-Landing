@@ -4,7 +4,7 @@ var _formstruct = {
     formTitle: 'Contact us',
     buttonText: 'Feedback',
     buttonTextColor: 'ffffff',
-    buttonBgColor: '0064CD',
+    buttonBgColor: '38335A',
     position: 'right',
     boxWidth: 600,
     verticalOffset: 30,
