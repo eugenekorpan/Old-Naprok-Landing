@@ -1,8 +1,8 @@
-<script type="text/javascript">
+
 var _formstruct = {
     formId: '59805aa43f8f9aa0148b4567',
     formTitle: 'Contact us',
-    buttonText: 'Обратная связь',
+    buttonText: 'Feedback',
     buttonTextColor: 'ffffff',
     buttonBgColor: '0064CD',
     position: 'right',
@@ -19,4 +19,4 @@ var _formstruct = {
         'formstruct.ru/widget/widget-2.2.min.js';
     document.getElementsByTagName('head')[0].appendChild(script);
 })();
-</script>
+
