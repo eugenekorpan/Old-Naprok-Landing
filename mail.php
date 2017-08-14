@@ -10,3 +10,5 @@ $message = "Name: $name \nPhone: $phone \nMessage: $text";
 
 $pagetitle = "New message from Naprok \"$sitename\"";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
+
+?>
