@@ -14,19 +14,6 @@ function myFunction() {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
-
-        $("#form").submit(function() {
-        $.ajax({
-            type: "POST",
-            url: "mail.php",
-            data: $(this).serialize()
-        }).done(function() {
-            $(this).find("input").val("");
-            alert("success!");
-            $("#form").trigger("reset");
-        });
-        return false;
-    });
 });
 
 jQuery(function($) {
