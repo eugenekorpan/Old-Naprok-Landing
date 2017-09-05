@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: 
+Disallow: /sector.html
+Host: https://naprok.com/
+Sitemap:https://naprok.com/sitemap.xml
+Crawl-delay: 4
+
+User-agent: Googlebot-Image
+Disallow: Disallow: /*.png$
+Disallow: Disallow: /*.svg$
