@@ -28,6 +28,7 @@
     <script src='js/main.js'></script>
     <script src='js/menu-responsive.js'></script>
 
+
    <!--  <script src="common.js"></script> -->
 
 <!-- <script src='js/analytics.js'></script> -->
@@ -67,9 +68,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 }
 </script>
+    <link rel='stylesheet' href='css/app.css'>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel='stylesheet' href='css/app.css'>
+    <script src="https://use.fontawesome.com/81cb7a6a88.js"></script>
     <link href='images/favicon.ico' rel='icon' type='image/x-icon' />
   </head>
 
@@ -99,7 +101,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </div>
-      <div class="home" id="home">
+      <div class="home home1">
         <div class="container">
           <h1>Do you want to find <br /> an excellent developer right away?</h1>
           <h2>Our outstaffing company is ready to provide you with a specialist <br /> who will create a quality software that meets all the requirements.</h2>
@@ -108,53 +110,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </div>
+      <div class="home home2">
+        <div class="container">
+        <h1><span>Naprok</span><br /> is a reliable outstaffing company.</h1>
+            <h2>
+              We provide websites and mobile app developers. Our organization can find engineers who will help to make your business more successful.
+              The policy of company is based on an individual approach to each client. This makes it possible to meet the demands and strictly observe international standards.
+            </h2> 
+          </div>
+        </div>
     </header> 
 
     <div class="why" id="why"> 
       <div class="container">
-        <h2><span>Naprok</span><br /> is a reliable outstaffing company.</h2>
-        <div class="about">
-          <p>
-            We provide websites and mobile app developers. Our organization can find engineers who will help to make 
-            your <br /> business more successful.
-          </p>
-          <p>
-            The policy of company is based on an individual approach to each client. This makes it possible to meet the demands <br /> and strictly observe international standards.
-          </p> 
-        </div>
         <h2>With Naprok you get:</h2>
         <div class="icons">
-          <div class="col-md-4">
+          <div class="col-md-4 item">
             <div class="icon">
               <img src="images/dev-add.svg" alt="Can provide the developer right now" />
             </div>
             <p>Ability to provide<br />the developer right now</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 item">
             <div class="icon">
               <img src="images/easy.svg" alt="Without difficult recruiting process" />
             </div>
             <p>No difficult recruiting process</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 item">
             <div class="icon">
               <img src="images/clock.svg" alt="No hidden costs, free consultations" />
             </div>
             <p>No cost to organize<br />the workflow and tools</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 item">
             <div class="icon">
               <img src="images/paper.svg" alt="Transparent and clear structure" />
             </div>
             <p>No problems with<br />bureaucracy</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 item">
             <div class="icon">
               <img src="images/dev-manage.svg" alt="Manage the specialists" />
             </div>
             <p>You manage a specialist<br />as if it's your employee</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 item">
             <div class="icon">
               <img src="images/developers.svg" alt="Both short- and long-term partnerships are welcome" />
             </div>
@@ -169,37 +170,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="screening" id="screening"> 
       <div class="container">
           <h2><span>We select developers personally for each client.</span><br /> That is why we carry out several steps for the selection of qualified specialists:</h2>
-        <div class="col-md-2 col-md-offset-2 col-xs-12">
-          <img src="images/bubble.svg" alt="Language">
+          <div class="item-screening">
+            <div class="col-md-2 col-md-offset-2 col-xs-12">
+              <img src="images/bubble.svg" alt="Language">
+            </div>
+            <div class="col-md-6">
+              <p>
+                Language.The developer must speak English fluently because this greatly speeds up the workflow. We promise that the developer knows English at a level sufficient to solve any issues during the work process.
+              </p>
+            </div>
+          </div>
+        <div class="item-screening">
+          <div class="col-md-2 col-md-offset-2 col-xs-12">
+            <img src="images/dev-check.svg" alt="Become part of the team" class="part-of-team">
+          </div>
+          <div class="col-md-6">
+            <p>
+              Personality and culture. Knowledge of the language is an excellent advantage for the developer, but it doesn’t mean anything if a person can’t become part of the team. Before checking technical knowledge, we always find out the personal qualities of the employee and his loyalty to other people. This helps to make sure that the team won’t have any conflicts or problems of a personal nature. 
+            </p>
+          </div>
         </div>
-        <div class="col-md-6">
-          <p>
-            Language.The developer must speak English fluently because this greatly speeds up the workflow. We promise that the developer knows English at a level sufficient to solve any issues during the work process.
-          </p>
+        <div class="item-screening">
+          <div class="col-md-2 col-md-offset-2 col-xs-12 ">
+            <img src="images/skills.svg" alt="Technique Skills">
+          </div>
+          <div class="col-md-6">
+             <p>
+              Skills. The qualifications of each candidate are checked by experts in the field, as the competence in technical skills must satisfy the requirements of the client.
+            </p>
+          </div>
         </div>
-        <div class="col-md-2 col-md-offset-2 col-xs-12">
-          <img src="images/dev-check.svg" alt="Become part of the team" class="part-of-team">
-        </div>
-        <div class="col-md-6">
-          <p>
-            Personality and culture. Knowledge of the language is an excellent advantage for the developer, but it doesn’t mean anything if a person can’t become part of the team. Before checking technical knowledge, we always find out the personal qualities of the employee and his loyalty to other people. This helps to make sure that the team won’t have any conflicts or problems of a personal nature. 
-          </p>
-        </div>
-        <div class="col-md-2 col-md-offset-2 col-xs-12">
-          <img src="images/skills.svg" alt="Technique Skills">
-        </div>
-        <div class="col-md-6">
-           <p>
-            Skills. The qualifications of each candidate are checked by experts in the field, as the competence in technical skills must satisfy the requirements of the client.
-          </p>
-        </div>
+        <div class="item-screening">
         <div class="col-md-2 col-md-offset-2 col-xs-12">
           <img src="images/test.svg" alt="Test project">
         </div>
-        <div class="col-md-6">
-           <p>
-            Test project. It helps to estimate theoretical and practical knowledge in development. Besides, this is a great chance for the developer to show his experience in programming, and demonstrate his creative abilities.
-          </p>
+          <div class="col-md-6">
+             <p>
+              Test project. It helps to estimate theoretical and practical knowledge in development. Besides, this is a great chance for the developer to show his experience in programming, and demonstrate his creative abilities.
+            </p>
+          </div>
         </div>
       </div> 
     </div>
@@ -237,19 +246,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
            
             <div class="mail col-md-6 col-md-offset-1" id="mail" >
            
-              <div class="col-md-6">
-                <input type="text" name="fullname" placeholder="full name" required="required">
+              <div class="group">
+                <input type="text" name="fullname" required="required">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Name</label>
               </div>
-              <div class="col-md-6">
-                <input type="email" name="email" placeholder="email" required="required">
+                <div class="group">
+                <input type="text" name="email" required="required">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
               </div>
-              <div class="clearfix"></div>
-              <div class="col-md-12">
-                <textarea name="text" name="message" placeholder="message" required="required"></textarea>
+              <div class="group">
+                <label>Message:</label>
+                <textarea name="text" name="message" required="required"></textarea>
               </div>
-              <div class="col-md-4">
-                <button class="btn" type="submit">send</button>
-              </div>
+                <button class="btn" type="submit">Send</button>
             </div>
             <div class="col-md-4 col-md-offset-1">
               <div class="adress">
@@ -259,6 +272,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p><span> Ukraine </span></p>
                 <p> contact@naprok.com </p>
                 <p> +380977535731 </p>
+                <div class="social">
+                  <a href="https://www.facebook.com/NaprokOutstaffing/" id="facebook">
+                    <i class="fa fa-2x fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/company/17920121/" id="linkedin">
+                    <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="" id="twitter">
+                    <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </form>

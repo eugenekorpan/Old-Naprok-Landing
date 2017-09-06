@@ -27,3 +27,20 @@ jQuery(function($) {
                 }
             });
         });
+
+var contentIndex = 1;
+function contentRotator() {
+  $(".home").hide();
+  $(".home" + contentIndex).show();
+  
+  var contentCount = 2;
+  contentIndex++;
+  if(contentIndex > contentCount) {
+    contentIndex = 1;
+  }
+}
+
+$(document).ready(function() {
+  contentRotator();
+  setInterval(contentRotator, 4000);
+});
