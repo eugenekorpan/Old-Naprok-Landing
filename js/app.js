@@ -9,3 +9,7 @@ makeActive = function () {
   helems[0].classList.add('active');
   felems[0].classList.add('active');
 };
+
+ $(document).ready(function(){
+    $("#home").fadeIn( 500);
+});
