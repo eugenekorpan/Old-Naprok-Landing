@@ -59,16 +59,22 @@ header{
 
   .home{
     margin-top: 150px;
+    margin-bottom: 50px; 
+    min-height: 380px;
   }
 
   .home h2{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: #fff
   }
 
   .home p{
     font-size: 20px;
     color: #fff
+  }
+
+  .btn-contact{
+    margin-bottom: 80px;
   }
 }
 
@@ -87,6 +93,7 @@ header{
 
 .btn-contact{
   padding: 20px 28px 20px 24px;
+  margin-bottom: 130px;
 }
 
 .btn-contact:hover{
@@ -175,13 +182,13 @@ padding: 38px 50px 25px 50px;
   text-align: center;
   margin-top: 60px;
 
-  .item{
+  .icon-item{
     -moz-transition: all 1s ease-out;
 -o-transition: all 1s ease-out;
 -webkit-transition: all 1s ease-out;
   }
 
-  .item:hover{
+  .icon-item:hover{
  -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -306,7 +313,7 @@ footer{
   textarea{
       width: 100%;
       height: 195px;
-      border: 2px solid $dark-blue;
+      border: 2px solid $light-blue;
       background-color: #fff;
       padding: 12px 20px 12px 20px;
       background: none;
@@ -325,7 +332,7 @@ footer{
   display:block;
   width: 100%;
   border:none;
-  border-bottom:2px solid $dark-blue;
+  border-bottom:2px solid $light-blue;
   background: none;
   color: #fff;
   font-size: 20px;
@@ -337,7 +344,7 @@ input:focus, input:invalid {
 }
 
 label {
-  color:$dark-blue; 
+  color:$light-blue; 
   font-size:18px;
   font-weight:normal;
   position:absolute;
@@ -352,7 +359,7 @@ label {
 input:focus ~ label, input:valid ~ label    {
   top:-20px;
   font-size:14px;
-  color:$dark-blue;
+  color:$light-blue;
 }
 
 .bar  { 
@@ -439,7 +446,7 @@ background:  #fff url("../images/bg-2.svg") no-repeat right;
 background-size: 200px auto;
 }
 
-#facebook, #linkedin, #twitter{
+#facebook, #linkedin, #twitter, #google-plus{
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -456,4 +463,9 @@ background-size: 200px auto;
 .fa-twitter:hover{
   color: #3f80f2;
 }
+
+.fa-google-plus:hover{
+  color: #f05a5a;
+}
+
 
