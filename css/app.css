@@ -84,13 +84,17 @@ header {
   background-attachment: fixed;
   background-size: cover; }
   header .home {
-    margin-top: 150px; }
+    margin-top: 150px;
+    margin-bottom: 50px;
+    min-height: 380px; }
   header .home h2 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: #fff; }
   header .home p {
     font-size: 20px;
     color: #fff; }
+  header .btn-contact {
+    margin-bottom: 80px; }
 
 .button {
   margin-bottom: 30px; }
@@ -104,7 +108,8 @@ header {
   opacity: 0.75; }
 
 .btn-contact {
-  padding: 20px 28px 20px 24px; }
+  padding: 20px 28px 20px 24px;
+  margin-bottom: 130px; }
 
 .btn-contact:hover {
   text-decoration: none; }
@@ -188,11 +193,11 @@ button {
 .icons {
   text-align: center;
   margin-top: 60px; }
-  .icons .item {
+  .icons .icon-item {
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out; }
-  .icons .item:hover {
+  .icons .icon-item:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2); }
@@ -279,7 +284,7 @@ footer {
   .mail textarea {
     width: 100%;
     height: 195px;
-    border: 2px solid #38335A;
+    border: 2px solid #6869BB;
     background-color: #fff;
     padding: 12px 20px 12px 20px;
     background: none;
@@ -294,7 +299,7 @@ footer {
     display: block;
     width: 100%;
     border: none;
-    border-bottom: 2px solid #38335A;
+    border-bottom: 2px solid #6869BB;
     background: none;
     color: #fff;
     font-size: 20px; }
@@ -302,7 +307,7 @@ footer {
     outline: none;
     box-shadow: none; }
   .mail label {
-    color: #38335A;
+    color: #6869BB;
     font-size: 18px;
     font-weight: normal;
     position: absolute;
@@ -315,7 +320,7 @@ footer {
   .mail input:focus ~ label, .mail input:valid ~ label {
     top: -20px;
     font-size: 14px;
-    color: #38335A; }
+    color: #6869BB; }
   .mail .bar {
     position: relative;
     display: block;
@@ -391,7 +396,7 @@ footer {
   background: #fff url("../images/bg-2.svg") no-repeat right;
   background-size: 200px auto; }
 
-#facebook, #linkedin, #twitter {
+#facebook, #linkedin, #twitter, #google-plus {
   display: inline-block;
   width: 40px;
   height: 40px; }
@@ -404,3 +409,6 @@ footer {
 
 .fa-twitter:hover {
   color: #3f80f2; }
+
+.fa-google-plus:hover {
+  color: #f05a5a; }
