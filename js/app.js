@@ -1,4 +1,4 @@
-var helems, felems, selector, makeActive;
+/*var helems, felems, selector, makeActive;
 
 selector = '.navigation li a[href^="/' + location.pathname.split("/")[1] + '"]';
 
@@ -12,4 +12,4 @@ makeActive = function () {
 
  $(document).ready(function(){
     $("#home").fadeIn( 500);
-});
+});*/

@@ -1,30 +1,12 @@
-function myFunction() {
-    var x = document.getElementById('nav');
-    if (x.className === 'nav') {
-        x.className += ' responsive';
-    } else {
-        x.className = 'nav';
-    }
-}
-
- $(document).ready(function(){
-    $(".nav, .button").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1000);
+  $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
+        sectionsColor: ['', '#153F65', '#EDF4FE', '#70BDF2', '#EDF4FE', '#70BDF2'],
+        scrollOverflow: true,
+        navigation: true,
+        slidesNavigation: true,
+        controlArrows: false,
+        menu: '#menu'
+      });
     });
-});
-
-jQuery(function($) {
-            $(window).scroll(function(){
-                if($(this).scrollTop()>690){
-                    $('.top-line').addClass('fixed');
-
-                }
-                else if ($(this).scrollTop()<690){
-                    $('.top-line').removeClass('fixed');
-                }
-            });
-        });
 
