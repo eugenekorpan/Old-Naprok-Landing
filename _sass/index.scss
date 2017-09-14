@@ -267,7 +267,6 @@ min-height: 100%;
   min-height: 100%;
   background: url("../images/bg.svg") no-repeat top -50px left;
 
-
   h2{
     color: $dark-blue;
     margin-top: 60px;
@@ -277,6 +276,8 @@ min-height: 100%;
   p{
     color: $dark-blue;
     transition: all 0.8s ease;
+    margin-bottom: 35%;
+
   }
 
   img{
