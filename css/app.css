@@ -214,6 +214,7 @@ a:focus {
     color: #fff; }
 
 .why {
+  background: url("../images/bg.svg") no-repeat top -50px left, url("../images/bg-2.svg") no-repeat bottom -40px right;
   height: 100%;
   text-align: center; }
   .why p {
@@ -246,7 +247,8 @@ a:focus {
   height: 130px; }
 
 .screening {
-  min-height: 1270px; }
+  min-height: 100%;
+  background: url("../images/bg.svg") no-repeat top -50px left; }
   .screening h2 {
     color: #03131F;
     margin-top: 60px;
