@@ -255,8 +255,7 @@ a:focus {
     text-align: center; }
   .screening p {
     color: #03131F;
-    transition: all 0.8s ease;
-    margin-bottom: 220px; }
+    transition: all 0.8s ease; }
   .screening img {
     width: 140px;
     transition: all 0.8s ease;
