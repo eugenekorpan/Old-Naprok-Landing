@@ -68,7 +68,9 @@ z-index:0;
   }
 }
 
-.button{
+.contact-btn{
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 30px;
@@ -78,13 +80,10 @@ z-index:0;
   cursor: pointer;
   text-transform: uppercase;
   color: $dark-blue;
-
-  a{
-    display: block;
-  }
+  background: transparent;
 }
 
-.button:hover{
+.contact-btn:hover{
   background-color: $dark-blue;
   color: #fff;
 }

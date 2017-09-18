@@ -85,7 +85,9 @@ min-height: 100%;*/
   .header .home {
     margin-top: 7%; }
 
-.button {
+.contact-btn {
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 30px;
@@ -94,11 +96,10 @@ min-height: 100%;*/
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
-  color: #03131F; }
-  .button a {
-    display: block; }
+  color: #03131F;
+  background: transparent; }
 
-.button:hover {
+.contact-btn:hover {
   background-color: #03131F;
   color: #fff; }
 
