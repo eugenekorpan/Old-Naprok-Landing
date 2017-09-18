@@ -34,8 +34,8 @@
   <script type="text/javascript">
      $(document).ready(function() {
       $('#fullpage').fullpage({
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
-        sectionsColor: ['', '#6869BB', '#EDF4FE', '#6869BB', '#EDF4FE', '#6869BB'],
+        anchors: ['home', 'about', 'why', 'screening', 'partners', 'contact'],
+        sectionsColor: ['', '#6869BB', '', '#6869BB', '', '#6869BB'],
         scrollOverflow: true,
         navigation: true,
         slidesNavigation: true,
@@ -104,17 +104,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div> 
     </div>
     <ul class="menu__links" id="menu">
-        <li data-menuanchor="firstPage"><a class="menu__links-item" href="#firstPage">home</a></li>
-        <li data-menuanchor="secondPage" ><a class="menu__links-item" href="#secondPage">about</a></li>
-        <li data-menuanchor="3rdPage"><a class="menu__links-item" href="#3rdPage">why</a></li>
-        <li data-menuanchor="4thPage"><a class="menu__links-item" href="#4thPage">screening</a></li>
-        <li ata-menuanchor="5thPage"><a class="menu__links-item" href="#5thPage">partners</a></li>
-        <li data-menuanchor="6thPage"><a class="menu__links-item" href="#6thPage">contact</a></li>
+        <li data-menuanchor="firstPage"><a class="menu__links-item" href="#home">home</a></li>
+        <li data-menuanchor="secondPage" ><a class="menu__links-item" href="#about">about</a></li>
+        <li data-menuanchor="3rdPage"><a class="menu__links-item" href="#why">why</a></li>
+        <li data-menuanchor="4thPage"><a class="menu__links-item" href="#screening">screening</a></li>
+        <li ata-menuanchor="5thPage"><a class="menu__links-item" href="#partners">partners</a></li>
+        <li data-menuanchor="6thPage"><a class="menu__links-item" href="#contact">contact</a></li>
       </ul>
     </div>
 </div>
 <div id="fullpage">
-  <div class="section">
+  <div class="section" id="section0">
     <div class="header">
       <div class="logo">
         <img src="./images/logo.svg" height="90px" alt="Naprok">
@@ -130,7 +130,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </div>
-  <div class="section">
+  <div class="section" id="section1">
     <div class="about">
       <div class="container">
         <div class="col-md-6"><img src="images/naprokillustration.svg"></div>
@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
   
-    <div class="section">
+    <div class="section" id="section2">
     <div class="why">
       <div class="container">
       <h2>With Naprok you get:</h2>
@@ -190,7 +190,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div class="section">
-        <div class="screening" id="screening">
+        <div class="screening">
       <div class="container">
         <h2 class="hidden-xs"><span>We select developers personally for each client.</span><br /> That is why we carry out several steps for the selection of qualified specialists:</h2>
             <div class="col-md-2 col-md-offset-2 col-xs-12">
@@ -198,7 +198,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="col-md-6">
               <p>
-                Language.The developer must speak English fluently because this greatly speeds up the workflow. We promise that the developer knows English at a level sufficient to solve any issues during the work process.
+               <b>Language.</b>The developer must speak English fluently because this greatly speeds up the workflow. We promise that the developer knows English at a level sufficient to solve any issues during the work process.
               </p>
           </div>
 
@@ -207,7 +207,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="col-md-6">
               <p>
-                Personality and culture. Knowledge of the language is an excellent advantage for the developer, but it doesn’t mean anything if a person can’t become part of the team. Before checking technical knowledge, we always find out the personal qualities of the employee and his loyalty to other people. This helps to make sure that the team won’t have any conflicts or problems of a personal nature. 
+                <b>Personality and culture.</b> Knowledge of the language is an excellent advantage for the developer, but it doesn’t mean anything if a person can’t become part of the team. Before checking technical knowledge, we always find out the personal qualities of the employee and his loyalty to other people. This helps to make sure that the team won’t have any conflicts or problems of a personal nature. 
               </p>
           </div>
 
@@ -216,7 +216,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="col-md-6">
               <p>
-                Skills. The qualifications of each candidate are checked by experts in the field, as the competence in technical skills must satisfy the requirements of the client.
+                <b>Skills.</b> The qualifications of each candidate are checked by experts in the field, as the competence in technical skills must satisfy the requirements of the client.
               </p>
           </div>
 
@@ -225,13 +225,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="col-md-6">
               <p>
-                Test project. It helps to estimate theoretical and practical knowledge in development. Besides, this is a great chance for the developer to show his experience in programming, and demonstrate his creative abilities.
+               <b> Test project.</b> It helps to estimate theoretical and practical knowledge in development. Besides, this is a great chance for the developer to show his experience in programming, and demonstrate his creative abilities.
               </p>
           </div>
       </div>
     </div>
   </div>
-  <div class="section">
+  <div class="section" id="section4">
     <div class="partners">
       <div class="container">
         <h2>PARTNERS:</h2>
