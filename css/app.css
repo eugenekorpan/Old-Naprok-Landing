@@ -95,6 +95,8 @@ min-height: 100%;*/
   cursor: pointer;
   text-transform: uppercase;
   color: #03131F; }
+  .button a {
+    display: block; }
 
 .button:hover {
   background-color: #03131F;

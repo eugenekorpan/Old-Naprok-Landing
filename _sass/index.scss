@@ -78,6 +78,10 @@ z-index:0;
   cursor: pointer;
   text-transform: uppercase;
   color: $dark-blue;
+
+  a{
+    display: block;
+  }
 }
 
 .button:hover{
