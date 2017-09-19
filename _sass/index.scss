@@ -229,8 +229,11 @@ z-index:0;
 }
 
 .about{
-  min-height: 85%;
 
+  .text{
+    padding-top: 10%;
+  }
+  
   p{
     color: #fff;
   }
