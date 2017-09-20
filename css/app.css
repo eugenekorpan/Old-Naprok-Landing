@@ -46,6 +46,8 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   .header .logo {
     padding-top: 20px;
     padding-left: 25px; }
+    .header .logo img {
+      height: 90px; }
   .header .home {
     margin-top: 7%; }
 
