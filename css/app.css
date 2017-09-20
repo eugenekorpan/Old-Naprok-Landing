@@ -46,8 +46,6 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   .header .logo {
     padding-top: 20px;
     padding-left: 25px; }
-    .header .logo img {
-      height: 90px; }
   .header .home {
     margin-top: 7%; }
 
@@ -190,8 +188,6 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
     padding-bottom: 30px;
     padding-top: 30px;
     font-size: 15px; }
-  .icons img {
-    width: 130px; }
 
 .icon {
   height: 130px; }
@@ -209,7 +205,6 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
     margin-bottom: 5%;
     font-size: 15px; }
   .screening img {
-    width: 80px;
     transition: all 0.8s ease;
     fill: #ffb600; }
 
