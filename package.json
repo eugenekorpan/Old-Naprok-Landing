@@ -1,0 +1,27 @@
+{
+  "name": "eugenekorpan.github.io",
+  "version": "1.0.0",
+  "description": "Naprok website",
+  "main": "common.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugenekorpan/eugenekorpan.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugenekorpan/eugenekorpan.github.io/issues"
+  },
+  "homepage": "https://github.com/eugenekorpan/eugenekorpan.github.io#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
