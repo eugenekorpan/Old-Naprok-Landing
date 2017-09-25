@@ -1,12 +1,15 @@
 $(document).ready(function() {
       $('#fullpage').fullpage({
         anchors: ['home', 'about', 'why', 'screening', 'partners', 'contact'],
-        sectionsColor: ['', '#6869BB', '', '#6869BB', '#e7e6e6', '#6869BB'],
-        scrollOverflow: true,
+        sectionsColor: ['', '#6869BB', '#fff', '#6869BB', '#e7e6e6', '#6869BB'],
         navigation: true,
         slidesNavigation: true,
         controlArrows: false,
-        menu: '#menu'
+        menu: '#menu',
+        responsiveWidth: 900,
+        afterResponsive: function(isResponsive){
+          
+        }
       });
 
 var movementStrength = 25;
