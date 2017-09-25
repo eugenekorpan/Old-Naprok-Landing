@@ -29,7 +29,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus{
 
 .header{
 background-image: url("../images/background.png");
-position:fixed ;
+position: relative;
 top:0;
 width:100%;
 z-index:0;
@@ -194,8 +194,6 @@ z-index:0;
   }
 
   h2{
-  margin-top: 45px;
-  margin-bottom: 45px;
   color: $dark-blue;
   }
 }
@@ -228,13 +226,13 @@ z-index:0;
   height: 130px;
 }
 
-.screening{
-  min-height: 100%;
+#section3{  
   background: url("../images/bg.svg") no-repeat top -50px left;
+}
 
+.screening{
   h2{
     color: $dark-blue;
-    margin-top: 60px;
     text-align: center;
   }
 
@@ -276,13 +274,8 @@ z-index:0;
   }
 }
 
-.contact{
-  height: 100%;
-}
 
 .mail{
-  padding-top: 60px;
-
   .group{ 
     position:relative; 
     margin-bottom: 30px; 
@@ -396,10 +389,6 @@ input:focus ~ .highlight {
   from { background:#5264AE; }
   to  { width:0; background:transparent; }
 }
-}
-
-.adress{
-  padding-top: 135px;
 }
 
 .footer-bottom{
