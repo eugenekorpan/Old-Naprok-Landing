@@ -15,16 +15,27 @@
 h1 {
   color: #fff;
   font-size: 40px !important;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Helvetica'; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 h2 {
   color: #fff;
   font-size: 30px !important;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Helvetica'; }
+
+h3 {
+  font-family: 'Helvetica';
+  color: #4B4C4D; }
 
 p {
   font-size: 20px;
-  color: #03131F; }
+  color: #4B4C4D; }
 
 a, a:active, a:hover, a:visited, a:link, a:focus {
   text-decoration: none !important;
@@ -32,40 +43,45 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   font-size: 18px;
   margin: 0;
   outline: none;
-  color: #fff !important;
-  outline: none; }
+  color: #fff !important; }
 
 .header {
   background-image: url("../images/background.png");
   position: relative;
-  top: 0;
-  width: 100%;
-  z-index: 0;
-  height: 100%;
-  background-size: cover; }
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 720px; }
   .header .logo {
     padding-top: 20px;
     padding-left: 25px; }
   .header .home {
     margin-top: 7%; }
 
-.contact-btn {
+.contact-btn, button {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 30px;
-  border: 3px solid #03131F;
-  color: #fff;
   text-align: center;
   cursor: pointer;
+  color: #fff !important;
   text-transform: uppercase;
-  color: #03131F;
   background: transparent; }
 
+.contact-btn {
+  border: 3px solid #003C54; }
+
 .contact-btn:hover {
-  background-color: #03131F;
-  color: #fff; }
+  background-color: #003C54; }
+
+button {
+  border: 3px solid #0099AD; }
+
+button:hover {
+  background-color: #0099AD; }
 
 .menu {
   text-align: right;
@@ -86,7 +102,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   position: absolute;
   height: 9px;
   width: 100%;
-  background: #03131F;
+  background: #003C54;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
@@ -111,7 +127,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   right: 0;
   left: 0;
   margin-top: 80px;
-  background-color: #03131F;
+  background-color: #003C54;
   z-index: 1000;
   overflow: auto;
   opacity: 0;
@@ -151,25 +167,62 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
 .menu.menu_state_open .menu__links {
   opacity: 0.8; }
 
-#section1 {
-  background: url("../images/bg-2.svg") no-repeat bottom -40px right; }
+.about {
+  background-image: url(../images/bg-3.svg);
+  -webkit-animation: 30s linear 0s normal none infinite animate;
+  -moz-animation: 30s linear 0s normal none infinite animate;
+  -ms-animation: 30s linear 0s normal none infinite animate;
+  -o-animation: 30s linear 0s normal none infinite animate;
+  animation: 30s linear 0s normal none infinite animate; }
 
-.about .text {
-  padding-top: 10%; }
+@-webkit-keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 500px 0; } }
 
-.about p {
-  color: #fff; }
+@-moz-keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 500px 0; } }
 
-#section2 {
-  background: url("../images/bg.svg") no-repeat top -50px left, url("../images/bg-2.svg") no-repeat bottom -40px right; }
+@-ms-keyframes animate {
+  .about from {
+    background-position: 0 0; }
+  .about to {
+    background-position: 500px 0; } }
+
+@-o-keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 500px 0; } }
+
+@keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 500px 0; } }
+  .about .sections {
+    min-height: 720px; }
+  .about .description {
+    background-color: #F3FAFB;
+    margin-top: 200px;
+    min-height: 520px; }
+  .about .illustration {
+    background-color: #0099AD;
+    background: #0099AD url(../images/naprokillustration.svg) no-repeat;
+    min-height: 520px; }
+  .about span {
+    font-family: 'HelveticaBold';
+    color: #003C54; }
 
 .why {
-  text-align: center; }
-  .why p {
-    color: #03131F;
-    margin: 0; }
+  text-align: center;
+  background-color: #F3FAFB; }
   .why h2 {
-    color: #03131F; }
+    color: #003C54; }
 
 .icons {
   text-align: center; }
@@ -182,7 +235,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
     -ms-transform: scale(1.2);
     transform: scale(1.2); }
   .icons p {
-    color: #03131F;
+    color: #0099AD;
     padding-bottom: 30px;
     padding-top: 30px;
     font-size: 15px; }
@@ -190,38 +243,109 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
 .icon {
   height: 130px; }
 
-#section3 {
-  background: url("../images/bg.svg") no-repeat top -50px left; }
+.screening {
+  background: url("../images/bg.svg") no-repeat top -50px left, url("../images/bg-2.svg") no-repeat bottom -40px right; }
+  .screening h2 {
+    color: #4B4C4D; }
+  .screening img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out; }
+  .screening img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
 
-.screening h2 {
-  color: #03131F;
-  text-align: center; }
-
-.screening p {
-  color: #03131F;
-  transition: all 0.8s ease;
-  margin-bottom: 5%;
-  font-size: 15px; }
-
-.screening img {
-  transition: all 0.8s ease;
-  fill: #ffb600; }
-
-.partners h2 {
-  color: #03131F;
-  margin-bottom: 60px; }
-
-.partner {
-  text-align: center; }
-  .partner img {
-    width: 60%;
+.partners {
+  background-color: #F3FAFB;
+  text-align: center;
+  min-height: 720px; }
+  .partners .partner {
+    justify-content: center;
+    align-items: center;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out; }
+  .partners img {
+    width: 180px;
+    margin-top: 160px;
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
     -webkit-transition: all 0.4s ease-out; }
-  .partner img:hover {
+  .partners img:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1); }
+  .partners h2 {
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #4B4C4D; }
+
+.footer {
+  background-image: url(../images/bg-3.svg);
+  padding-top: 50px;
+  -webkit-animation: 30s linear 0s normal none infinite animate;
+  -moz-animation: 30s linear 0s normal none infinite animate;
+  -ms-animation: 30s linear 0s normal none infinite animate;
+  -o-animation: 30s linear 0s normal none infinite animate;
+  animation: 30s linear 0s normal none infinite animate; }
+
+@-webkit-keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 500px 0; } }
+
+@-moz-keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 500px 0; } }
+
+@-ms-keyframes animate {
+  .footer from {
+    background-position: 0 0; }
+  .footer to {
+    background-position: 500px 0; } }
+
+@-o-keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 500px 0; } }
+
+@keyframes animate {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 500px 0; } }
+  .footer li {
+    display: inline-block;
+    padding: 20px 30px 20px 30px; }
+  .footer .form-header {
+    background-color: #003C54; }
+  .footer .contacts-header {
+    background-color: #0099AD; }
+  .footer h3 {
+    margin: 0;
+    color: #fff;
+    text-align: center; }
+  .footer p {
+    color: #fff; }
+  .footer .form {
+    background-color: #003C54;
+    padding-top: 60px;
+    min-height: 620px; }
+  .footer .contacts {
+    background-color: #0099AD;
+    min-height: 620px;
+    padding-top: 60px;
+    padding-left: 60px; }
+  .footer .fa {
+    padding: 10px; }
 
 .mail .group {
   position: relative;
@@ -230,7 +354,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
 .mail textarea {
   width: 100%;
   height: 195px;
-  border: 2px solid #03131F;
+  border: 2px solid #fff;
   background-color: #fff;
   padding: 12px 20px 12px 20px;
   background: none;
@@ -247,7 +371,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 2px solid #03131F;
+  border-bottom: 2px solid #fff;
   background: none;
   color: #fff;
   font-size: 20px; }
@@ -257,7 +381,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   box-shadow: none; }
 
 .mail label {
-  color: #03131F;
+  color: #fff;
   font-size: 18px;
   font-weight: normal;
   position: absolute;
@@ -271,7 +395,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
 .mail input:focus ~ label, .mail input:valid ~ label {
   top: -20px;
   font-size: 14px;
-  color: #03131F; }
+  color: #fff; }
 
 .mail .bar {
   position: relative;
@@ -284,7 +408,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   width: 0;
   bottom: 1px;
   position: absolute;
-  background: #03131F;
+  background: #fff;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all; }
@@ -332,42 +456,3 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   to {
     width: 0;
     background: transparent; } }
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 250px; }
-  .footer-bottom p {
-    margin: 0; }
-
-#facebook, #linkedin, #twitter, #google-plus {
-  display: inline-block;
-  width: 40px;
-  height: 40px; }
-
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  width: 15px !important;
-  height: 15px !important;
-  margin: -15px 0 0 -10px !important;
-  background: transparent !important;
-  box-sizing: border-box !important;
-  border: 2px solid #03131F !important; }
-
-#fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span {
-  margin: -8px 0 0 -8px;
-  background: #03131F !important; }
-
-.fp-slides .fp-controlArrow.fp-next {
-  right: 50px !important; }
-
-.fp-slides .fp-controlArrow.fp-prev {
-  left: 50px !important; }
-
-legend {
-  color: #03131F; }
-
-fieldset {
-  border: 2px solid #03131F !important; }
