@@ -224,9 +224,21 @@ button:hover{
   }
 
   .description{
+    padding: 0;
+  }
+
+  .description-header{
+    padding: 20px 30px 20px 30px;
     background-color: #F3FAFB;
     margin-top: 200px;
+    width: 50%;
+  }
+
+  .description-text{
+    background-color: #F3FAFB;
     min-height: 520px;
+    padding-left: 20px;
+    padding-top: 20px;
   }
 
   .illustration{
@@ -238,6 +250,10 @@ button:hover{
   span{
     font-family: 'HelveticaBold';
     color: $main;
+  }
+
+  h3{
+    margin: 0;
   }
 }
 

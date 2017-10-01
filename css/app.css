@@ -207,9 +207,17 @@ button:hover {
   .about .sections {
     min-height: 720px; }
   .about .description {
+    padding: 0; }
+  .about .description-header {
+    padding: 20px 30px 20px 30px;
     background-color: #F3FAFB;
     margin-top: 200px;
-    min-height: 520px; }
+    width: 50%; }
+  .about .description-text {
+    background-color: #F3FAFB;
+    min-height: 520px;
+    padding-left: 20px;
+    padding-top: 20px; }
   .about .illustration {
     background-color: #0099AD;
     background: #0099AD url(../images/naprokillustration.svg) no-repeat;
@@ -217,6 +225,8 @@ button:hover {
   .about span {
     font-family: 'HelveticaBold';
     color: #003C54; }
+  .about h3 {
+    margin: 0; }
 
 .why {
   text-align: center;
