@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
   (function($){
     $(function() {
@@ -7,4 +8,3 @@ $(document).ready(function() {
     });
   })(jQuery);
 });
-
