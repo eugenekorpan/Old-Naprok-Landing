@@ -8,6 +8,7 @@ var concat = require('gulp-concat');
 gulp.task('cssMinfy', function(){
   return gulp.src([
   		'./css/app.css',
+  		'./css/bootstrap.min.css'
 	])
   	.pipe(concat('app.css'))
     .pipe(cssMin())
