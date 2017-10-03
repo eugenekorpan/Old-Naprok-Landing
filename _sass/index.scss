@@ -182,7 +182,7 @@ button:hover{
 }
 
 .menu.menu_state_open .menu__links {
-  opacity: 0.9;  
+  opacity: 0.8;  
 }
 
 
@@ -283,6 +283,8 @@ button:hover{
 
  p{
     color: $secondary;
+    margin-bottom: 60px;
+    margin-top: 30px;
     font-size: 15px;
   }
 
