@@ -38,4 +38,4 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass', 'cssMinfy', 'compress-img' ]);
+gulp.task('default', ['sass', 'cssMinfy', 'compress-img']);
