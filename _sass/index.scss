@@ -294,20 +294,47 @@ button:hover{
   height: 130px;
 }
 
+
 .screening{
   background: url("../images/bg.svg") no-repeat top -50px left,
               url("../images/bg-2.svg") no-repeat bottom -40px right;
+
+  .steps{
+    min-height: 1000px;
+    background: url("../images/items.svg") no-repeat top center;
+    @import 'media';
+
+    p{
+      font-size: 14px;
+      margin: 0;
+    }
+
+    h3{
+      margin: 0;
+    }
+
+    .item2{
+      margin-top: 210px;
+    }
+
+    .item3{
+      margin-top: 495px;
+    }
+
+    .item4{
+      margin-top: 770px;
+    }
+  }
 
   h2{
     color: $text-color;
   }
 
   img{
-    margin-top: 50px;
-    margin-bottom: 50px;
      -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
+    float: right;
   }
 
   img:hover{
