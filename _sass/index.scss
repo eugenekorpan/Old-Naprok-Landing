@@ -296,13 +296,16 @@ button:hover{
 
 
 .screening{
-  background: url("../images/bg.svg") no-repeat top -50px left,
-              url("../images/bg-2.svg") no-repeat bottom -40px right;
+  background: url(../images/bg.svg) no-repeat top -60px left -18px,
+              url(../images/bg-2.svg) no-repeat bottom -40px right;
 
   .steps{
     min-height: 1000px;
-    background: url("../images/items.svg") no-repeat top center;
     @import 'media';
+
+    .numbers{
+      background: url(../images/items.svg);
+    }
 
     p{
       font-size: 14px;
