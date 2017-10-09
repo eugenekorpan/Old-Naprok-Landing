@@ -328,19 +328,6 @@ button:hover{
   h2{
     color: $text-color;
   }
-
-  img{
-     -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-    float: right;
-  }
-
-  img:hover{
- -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  }
 }
 
 .partners{
