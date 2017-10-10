@@ -7,9 +7,9 @@ var concat = require('gulp-concat');
 var purify = require('gulp-purify-css');
 
 gulp.task('purify', function() {
-  return gulp.src('./css/app.css')
+  return gulp.src('./css/animate.min.css')
     .pipe(purify(['index.html']))
-    .pipe(gulp.dest('./css/'));
+    .pipe(gulp.dest('./css/animate.css'));
 });
 
 gulp.task('cssMinfy', function(){
@@ -46,4 +46,4 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass', 'cssMinfy', 'compress-img']);
+gulp.task('default', ['sass','cssMinfy', 'compress-img']);
