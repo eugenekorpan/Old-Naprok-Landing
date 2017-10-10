@@ -4,7 +4,14 @@ var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var cssMin = require('gulp-css');
 var concat = require('gulp-concat');
- 
+var purify = require('gulp-purify-css');
+
+gulp.task('purify', function() {
+  return gulp.src('./css/app.css')
+    .pipe(purify(['index.html']))
+    .pipe(gulp.dest('./css/'));
+});
+
 gulp.task('cssMinfy', function(){
   return gulp.src([
   		'./css/app.css',

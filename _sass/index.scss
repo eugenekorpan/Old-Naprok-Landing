@@ -1,8 +1,11 @@
-h1{
+h1, h2{
   color: #fff;
-  font-size: 40px !important;
   text-align: center;
   font-family: 'Helvetica';
+}
+
+h1{
+font-size: 40px;
 }
 
 ul{
@@ -13,9 +16,7 @@ ul{
 
 h2{
   color: #fff;
-  font-size: 30px !important;
-  text-align: center;
-  font-family: 'Helvetica';
+  font-size: 30px;
 }
 
 h3{
@@ -25,16 +26,15 @@ h3{
 p{
   font-size: 20px;
   color: $text-color;
-
 }
 
 a, a:active, a:hover, a:visited, a:link, a:focus{
-  text-decoration: none !important;
+  text-decoration: none;
   cursor: pointer;
   font-size: 18px;
   margin: 0;
   outline: none;
-  color: #fff !important;
+  color: #fff;
 }
 
 
@@ -257,13 +257,11 @@ button:hover{
     margin-top: 30px;
     font-size: 15px;
   }
-
 }
 
 .icon{
   height: 130px;
 }
-
 
 .screening{
   background: url(../images/bg.svg) no-repeat top -60px left -18px,

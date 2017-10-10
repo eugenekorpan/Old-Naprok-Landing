@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
-    "gulp-css": "^0.1.0"
+    "gulp-css": "^0.1.0",
+    "gulp-purify-css": "^0.1.0"
   }
 }
