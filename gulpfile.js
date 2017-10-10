@@ -4,13 +4,8 @@ var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var cssMin = require('gulp-css');
 var concat = require('gulp-concat');
-var purify = require('gulp-purify-css');
+var uncss = require('gulp-uncss');
 
-gulp.task('purify', function() {
-  return gulp.src('./css/animate.min.css')
-    .pipe(purify(['index.html']))
-    .pipe(gulp.dest('./css/animate.css'));
-});
 
 gulp.task('cssMinfy', function(){
   return gulp.src([
@@ -19,6 +14,9 @@ gulp.task('cssMinfy', function(){
       './css/animate.min.css'
 	])
   	.pipe(concat('app.css'))
+    .pipe(uncss({
+            html: ['index.html']
+        }))
     .pipe(cssMin())
     .pipe(gulp.dest('./css'));
 });
