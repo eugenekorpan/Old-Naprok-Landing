@@ -13,10 +13,10 @@ gulp.task('cssMinfy', function(){
   		'./css/bootstrap.min.css',
       './css/animate.min.css'
 	])
-  	.pipe(concat('app.css'))
-    .pipe(uncss({
+  	.pipe(concat('style.css'))
+/*    .pipe(uncss({
             html: ['index.html']
-        }))
+        }))*/
     .pipe(cssMin())
     .pipe(gulp.dest('./css'));
 });
