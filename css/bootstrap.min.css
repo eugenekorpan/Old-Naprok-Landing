@@ -20,20 +20,6 @@ img {
   border: 0;
 }
 
-button,input,textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-}
-
-button {
-  overflow: visible;
-}
-
-button {
-  text-transform: none;
-}
-
 button {
   -webkit-appearance: button;
   cursor: pointer;

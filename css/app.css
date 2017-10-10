@@ -67,6 +67,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   text-align: center;
   cursor: pointer;
   color: #fff !important;
+  font-size: 18px;
   text-transform: uppercase;
   background: transparent; }
 
