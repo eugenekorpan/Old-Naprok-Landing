@@ -45,7 +45,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   color: #fff; }
 
 .header {
-  background-image: url("../images/background.png");
+  background-image: url("./images/background.png");
   position: relative;
   background-repeat: repeat-x;
   background-position: top center;
@@ -168,7 +168,7 @@ button:hover {
   opacity: 0.8; }
 
 .about {
-  background-image: url(../images/bg-3.svg); }
+  background-image: url(./images/bg-3.svg); }
   .about .sections {
     min-height: 720px; }
   .about .description {
@@ -185,7 +185,7 @@ button:hover {
     padding-top: 20px; }
   .about .illustration {
     background-color: #0099AD;
-    background: #0099AD url(../images/naprokillustration.svg) no-repeat;
+    background: #0099AD url(./images/naprokillustration.svg) no-repeat;
     min-height: 520px; }
   .about span {
     font-family: 'HelveticaBold';
@@ -219,7 +219,7 @@ button:hover {
   height: 130px; }
 
 .screening {
-  background: url(../images/bg.svg) no-repeat top -60px left -18px, url(../images/bg-2.svg) no-repeat bottom -40px right; }
+  background: url(./images/bg.svg) no-repeat top -60px left -18px, url(./images/bg-2.svg) no-repeat bottom -40px right; }
   .screening .steps {
     min-height: 1000px; }
     .screening .steps p {
@@ -267,7 +267,7 @@ button:hover {
     color: #4B4C4D; }
 
 .footer {
-  background-image: url(../images/bg-3.svg);
+  background-image: url(./images/bg-3.svg);
   padding-top: 50px; }
   .footer li {
     display: inline-block;
@@ -625,33 +625,33 @@ img {
 }
 
 .pull-right {
-  float: right !important;
+  float: right;
 }
 
 .visible-xs,.visible-sm {
-  display: none !important;
+  display: none;
 }
 
 @media (max-width:767px) {
   .visible-xs {
-    display: block !important;
+    display: block;
   }
 }
 
 @media (min-width:768px) and (max-width:991px) {
   .visible-sm {
-    display: block !important;
+    display: block;
   }
 }
 
 @media (max-width:767px) {
   .hidden-xs {
-    display: none !important;
+    display: none;
   }
 }
 
 @media (min-width:768px) and (max-width:991px) {
   .hidden-sm {
-    display: none !important;
+    display: none;
   }
 }

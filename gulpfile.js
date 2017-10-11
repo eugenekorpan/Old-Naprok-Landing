@@ -5,17 +5,16 @@ var sass = require('gulp-sass');
 var cssMin = require('gulp-css');
 var concat = require('gulp-concat');
 var uncss = require('gulp-uncss');
-var gulp = require('gulp');
 var purify = require('gulp-purifycss');
 var cleanCSS = require('gulp-clean-css');
 var htmlreplace = require('gulp-html-replace');
 var amphtmlValidator = require('amphtml-validator');
 var fs = require('fs');
 
-const BUILD_PATH = './build';
-const BUILD_HTML = BUILD_PATH + '/index.html';
+
+const BUILD_HTML = 'index.html';
 const SOURCE = {
-  'CSS': './html/css/style.css',
+  'CSS': './css/style.css',
   'AMPHTML': './amphtml/index.html',
   'CLEANED_CSS': './amphtml/css/style.css'
 }
@@ -36,7 +35,7 @@ gulp.task('inline-css', ['purify'], function() {
         'tpl': '<style amp-custom>%s</style>'
       }
     }))
-    .pipe(gulp.dest(BUILD_PATH));
+    .pipe(gulp.dest('./'));
 });
 
 // validate ensures the AMP HTML is valid
@@ -90,4 +89,5 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass', 'cssMinfy', 'compress-img', 'validate','inline-css']);
+gulp.task('build', ['sass', 'cssMinfy', 'inline-css']);
+gulp.task('default', ['validate']);
