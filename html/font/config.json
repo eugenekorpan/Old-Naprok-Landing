@@ -1,0 +1,58 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "6cc7af3e5b55720bcb6ef68372ce24be",
+      "css": "facebook-official",
+      "code": 62000,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 61593,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f0cf7db1b03cb65adc450aa3bdaf8c4d",
+      "css": "gplus-squared",
+      "code": 61652,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
+      "css": "phone",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c2314ed1d2314b89f9285c53bcbf2548",
+      "css": "child",
+      "code": 61870,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "197375a3cea8cb90b02d06e4ddf1433d",
+      "css": "globe",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "598a5f2bcf3521d1615de8e1881ccd17",
+      "css": "clock",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e9107949dd6c9e8ab2b29ae07156e38c",
+      "css": "linkedin",
+      "code": 61665,
+      "src": "fontawesome"
+    }
+  ]
+}
