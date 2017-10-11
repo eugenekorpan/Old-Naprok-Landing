@@ -38,7 +38,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus{
 
 
 .header{
-  background-image: url("../images/background.png");
+  background-image: url("./images/background.png");
   position: relative;
   background-repeat: repeat-x;
   background-position: top center;
@@ -187,7 +187,7 @@ button:hover{
 
 
 .about{
-  background-image: url(../images/bg-3.svg);
+  background-image: url(./images/bg-3.svg);
   
   .sections{
     min-height: 720px;
@@ -213,7 +213,7 @@ button:hover{
 
   .illustration{
     background-color: $secondary;
-    background: $secondary url(../images/naprokillustration.svg) no-repeat;
+    background: $secondary url(./images/naprokillustration.svg) no-repeat;
     min-height: 520px;
   }
 
@@ -264,8 +264,8 @@ button:hover{
 }
 
 .screening{
-  background: url(../images/bg.svg) no-repeat top -60px left -18px,
-              url(../images/bg-2.svg) no-repeat bottom -40px right;
+  background: url(./images/bg.svg) no-repeat top -60px left -18px,
+              url(./images/bg-2.svg) no-repeat bottom -40px right;
 
   .steps{
     min-height: 1000px;
@@ -281,10 +281,6 @@ button:hover{
 
     .item2{
       margin-top: 210px;
-
-      img{
-        padding: 17px;
-      }
     }
 
     .item3{
@@ -318,7 +314,7 @@ button:hover{
 -webkit-transition: all 1s ease-out;
   }
 
-  img{
+/*  img{
     margin-top: 200px;
     margin-bottom: 20px;
     -moz-transition: all 0.4s ease-out;
@@ -332,17 +328,17 @@ button:hover{
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
   }
-
+*/
   h2{
     text-transform: uppercase;
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 200px;
     color: $text-color;
   }
 }
 
 .footer{
-background-image: url(../images/bg-3.svg);
+background-image: url(./images/bg-3.svg);
 padding-top: 50px;
 
   li{
