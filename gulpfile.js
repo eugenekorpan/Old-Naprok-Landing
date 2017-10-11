@@ -90,4 +90,4 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass', 'cssMinfy','validate','inline-css']);
+gulp.task('default', ['sass', 'cssMinfy', 'compress-img', 'validate','inline-css']);
