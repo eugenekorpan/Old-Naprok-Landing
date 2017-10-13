@@ -30,7 +30,6 @@ amp-sidebar {
   margin-top: 100px; }
 
 li {
-  margin-bottom: 20px;
   list-style: none;
   padding: 20px; }
 
@@ -72,9 +71,11 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
 .ampstart-btn {
   position: fixed;
   z-index: 10000;
-  margin: 20px;
+  margin: 10px 80px 0 0;
   padding: 20px 15px 15px 15px;
-  border: 3px solid #003C54; }
+  border: 3px solid #003C54;
+  right: 0px;
+  top: 0; }
 
 .ampstart-btn:hover {
   background: transparent; }
@@ -89,7 +90,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   min-height: 720px; }
   .header .logo {
     padding-top: 20px;
-    padding-left: 55px; }
+    padding-left: 80px; }
   .header .home {
     margin-top: 7%; }
   .header .menu-item {

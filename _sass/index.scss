@@ -59,17 +59,18 @@ a, a:active, a:hover, a:visited, a:link, a:focus{
   cursor: pointer;
   font-size: 18px;
   margin: 0;
-  outline: none;
+  outline: none; 
   color: #fff;
 }
 
 .ampstart-btn{
   position: fixed;
   z-index: 10000;
-  margin: 20px;
+  margin: 10px 80px 0 0;
   padding: 20px 15px 15px 15px;
   border: 3px solid #003C54;
   right: 0px;
+  top: 0;
 }
 
 .ampstart-btn:hover{
@@ -88,7 +89,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus{
 
   .logo{
     padding-top: 20px;
-    padding-left: 55px;
+    padding-left: 80px;
   }
 
   .home{
