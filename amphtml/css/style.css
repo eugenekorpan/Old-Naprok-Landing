@@ -27,7 +27,7 @@ amp-sidebar {
   cursor: pointer; }
 
 .menu {
-  margin-top: 100px; }
+  margin-top: 50px; }
 
 li {
   list-style: none;
@@ -71,7 +71,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
 .ampstart-btn {
   position: fixed;
   z-index: 10000;
-  margin: 10px 80px 0 0;
+  margin: 10px 30px 0 0;
   padding: 20px 15px 15px 15px;
   border: 3px solid #003C54;
   right: 0px;
@@ -90,7 +90,7 @@ a, a:active, a:hover, a:visited, a:link, a:focus {
   min-height: 720px; }
   .header .logo {
     padding-top: 20px;
-    padding-left: 80px; }
+    padding-left: 30px; }
   .header .home {
     margin-top: 7%; }
   .header .menu-item {
