@@ -17,7 +17,7 @@ if (!empty($_POST)) {
         '='.$value;
     }
     $post_string = implode('&', $post_items);
-    $curl_connection = curl_init('http://formspree.io/eugene@naprok.com');
+    $curl_connection = curl_init('https://formspree.io/eugene@naprok.com');
     curl_setopt($curl_connection, CURLOPT_CONNECTTIMEOUT, 30);
     curl_setopt($curl_connection, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl_connection, CURLOPT_SSL_VERIFYPEER, false);
