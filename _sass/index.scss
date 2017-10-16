@@ -65,12 +65,11 @@ a, a:active, a:hover, a:visited, a:link, a:focus{
 
 .ampstart-btn{
   position: fixed;
-  z-index: 10000;
-  margin: 10px 30px 0 0;
-  padding: 20px 15px 15px 15px;
-  border: 3px solid #003C54;
-  right: 0px;
-  top: 0;
+  z-index: 100;
+  border: 0;
+  padding: 0;
+  right: 30px;
+  top: 20px;
 }
 
 .ampstart-btn:hover{
