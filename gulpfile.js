@@ -88,5 +88,5 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('build', ['sass', 'cssMinfy', 'inline-css']);
+gulp.task('build', ['compress-img', 'sass', 'cssMinfy', 'inline-css']);
 gulp.task('default', ['validate']);
