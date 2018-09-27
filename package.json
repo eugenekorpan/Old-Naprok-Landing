@@ -19,15 +19,20 @@
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
+    "browser-sync": "^2.24.7",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.6.1",
     "gulp-html-replace": "^1.6.2",
     "gulp-imagemin": "^3.3.0",
     "gulp-minify": "^1.0.0",
     "gulp-sass": "^3.1.0",
+    "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-uncss": "^1.0.6"
+    "gulp-uncss": "^1.0.6",
+    "run-sequence": "^2.2.1"
   },
   "dependencies": {
     "amphtml-validator": "^1.0.20",
