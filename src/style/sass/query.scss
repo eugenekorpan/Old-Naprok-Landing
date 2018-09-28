@@ -1,26 +1,28 @@
-html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-  }
   .container {
     margin-right: auto;
     margin-left: auto;
   }
   
-  @media (min-width:390px) {
+  @media (min-width:360px) {
+    .phone-hiden {
+      display: none;
+    }
     .section-1 {
       background-size: 100%;
     }
     .nav-panel {
       width: 50%;
+      font-size: 18px;
     }
     .big-text {
       max-width: 50%;
       margin-top: 20px; 
     }
+    .small-text {
+      font-size: 18px;
+    }
     .talk-button {
-      margin-top: 20px;
+      margin-top: 30px;
       margin-bottom: 30px;
     }
   }
@@ -50,6 +52,9 @@ html {
   }
   
   @media (min-width:992px) {
+    .phone-hiden {
+      display: block;
+    }
     .container {
       width: 80%;
     }
@@ -62,14 +67,19 @@ html {
     }
     .nav-panel {
         margin-top: 4%;
+        font-size: 0.94vw;
     }
     .big-text {
       max-width: 100%;
       margin-top: 25%;
+      font-size: 3.1vw;
+    }
+    .small-text {
+      font-size: 1.25vw;
     }
     .talk-button {
       margin-top: 15%;
-      margin-bottom: 25%;
+      margin-bottom: 14%;
     }
   }
 
