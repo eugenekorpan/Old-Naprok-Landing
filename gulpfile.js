@@ -60,14 +60,17 @@ gulp.task('inject-css', function() {
 });
 
 gulp.task('sass:watch', function() {
-  gulp.watch('./src/style/sass/*',() => {runSeq('sass', 'css-concat', 'css-minify', 'inject-css')});
+  gulp.watch('./src/style/sass/*', () => { 
+    runSeq('sass', 'css-concat', 'css-minify', 'inject-css')});
 })
 
 gulp.task('start', function() {
   browserSync.init({
     server: {
       baseDir: 'src/'
-    }
+    },
+    stream: true,
+    notify: false
   })
 })
 

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+.debug {
+  border: 2px solid red; }
+
+.burger {
+  position: fixed;
+  z-index: 10; }
+
+.section-1 {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("./images/1-background.png");
+  background-repeat: no-repeat;
+  padding-top: 4%; }
+  .section-1 .nav-panel {
+    font-size: 18px;
+    margin-right: 30px; }
+    .section-1 .nav-panel a {
+      text-decoration: none;
+      color: #6f6f6f;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-left: 15px;
+      white-space: nowrap; }
+    .section-1 .nav-panel a:hover {
+      color: #00e8ee;
+      text-decoration: underline; }
+  .section-1 .big-text {
+    color: #6f6f6f;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1; }
+  .section-1 .small-text {
+    color: #000000;
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 6%; }
+  .section-1 .talk-button {
+    background-color: #00e3e6;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 25px;
+    width: 385px;
+    height: 70px;
+    border-radius: 36px;
+    outline: none;
+    border: transparent 0px solid; }
