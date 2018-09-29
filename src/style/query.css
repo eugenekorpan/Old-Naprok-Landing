@@ -2,7 +2,7 @@
   float: right; }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10,
-.col-15, .col-25, .col-32, .col-45, .col-55, .col-65, .col-75, .col-85, .col-95 {
+.col-15, .col-25, .col-32, .col-33, .col-45, .col-55, .col-65, .col-75, .col-85, .col-95 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -49,6 +49,8 @@
     width: 30%; }
   .col-32 {
     width: 32%; }
+  .col-33 {
+    width: 33%; }
   .col-4 {
     width: 40%; }
   .col-45 {
