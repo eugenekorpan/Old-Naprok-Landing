@@ -6,6 +6,40 @@
 .body {
   font-family: 'Open Sans', sans-serif; }
 
+.left-nav {
+  z-index: 10;
+  position: fixed;
+  left: 8vw;
+  top: 18vw;
+  height: 32vh;
+  width: 30px;
+  font-family: 'Open Sans', sans-serif; }
+  .left-nav a {
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 2;
+    margin-left: -5px; }
+    .left-nav a .active {
+      color: #00e3e6; }
+  .left-nav a:hover {
+    color: #00e3e6; }
+  .left-nav img:hover {
+    cursor: pointer; }
+
+#sidebar {
+  font-family: 'Open Sans', sans-serif; }
+  #sidebar li {
+    list-style-type: none; }
+  #sidebar a {
+    text-decoration: none;
+    margin-right: 20px;
+    line-height: 2;
+    color: #6f6f6f; }
+  #sidebar a:hover {
+    color: #00e3e6; }
+
 .header {
   position: absolute;
   padding-top: 90px;
@@ -194,6 +228,8 @@
     font-weight: 700; }
     .section-5 .title .blue {
       color: #00e3e6; }
+  .section-5 .amp-scrollable-carousel-slide {
+    margin-left: 0px; }
   .section-5 .item {
     box-shadow: 3px 3px 13px rgba(0, 1, 1, 0.2);
     width: 90%;
@@ -221,10 +257,10 @@
     font-weight: 400;
     letter-spacing: 0.75px;
     line-height: 1.5; }
-  .section-6 .contact-form .i-amphtml-form {
+  .section-6 .contact-form form {
     margin-top: 20%;
     border: 0px; }
-    .section-6 .contact-form .i-amphtml-form input[type='text'], .section-6 .contact-form .i-amphtml-form input[type='email'] {
+    .section-6 .contact-form form input[type='text'], .section-6 .contact-form form input[type='email'] {
       padding: 4%;
       padding-left: 10%;
       margin-bottom: 8%;
@@ -237,7 +273,7 @@
       font-size: 18px;
       font-weight: 700;
       letter-spacing: 1.02px; }
-    .section-6 .contact-form .i-amphtml-form input[type='submit'] {
+    .section-6 .contact-form form input[type='submit'] {
       color: #ffffff;
       font-size: 22px;
       font-weight: 700;
@@ -249,7 +285,7 @@
       padding-right: 10%;
       padding-top: 4%;
       padding-bottom: 4%; }
-    .section-6 .contact-form .i-amphtml-form input[type='submit']:hover {
+    .section-6 .contact-form form input[type='submit']:hover {
       cursor: pointer; }
 
 .footer {

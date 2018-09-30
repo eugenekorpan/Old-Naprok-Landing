@@ -89,7 +89,7 @@ gulp.task('clean', function(){
 // validate ensures the AMP HTML is valid
 gulp.task('validate', function() {
   amphtmlValidator.getInstance().then(function (validator) {
-    var input = fs.readFileSync(BUILD_HTML, 'utf8');
+    var input = fs.readFileSync('./src/index.html', 'utf8');
     var result = validator.validateString(input);
     ((result.status === 'PASS') ? console.log : console.error)(BUILD_HTML + ": " + result.status);
     for (var ii = 0; ii < result.errors.length; ii++) {
