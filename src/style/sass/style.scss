@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:500,700');
 
 .debug {
-    border: 2px solid red;
+    border: 1px solid red;
 }
 .body {
     font-family: 'Open Sans', sans-serif;
@@ -12,9 +12,9 @@
     z-index: 1;
     position: fixed;
     left: 8vw;
-    top: 18vw;
-    height: 32vh;
-    width: 30px;
+    top: 15vw;
+    height: 65vh;
+    width: 35px;
     font-family: 'Open Sans', sans-serif;
     a {
         text-decoration: none;
@@ -28,9 +28,10 @@
     a:hover {
         color: #00e3e6;
     }
-
+    .active { color: #00e3e6; }
     img:hover {
         cursor: pointer;
+        margin-left: 0px;
     }
 }
 
@@ -261,8 +262,27 @@
             color: #00e3e6;;
         }
     }
-    .amp-scrollable-carousel-slide {
-        margin-left: 0px;
+    .buttons {
+        .left-button{
+            position: absolute;
+            z-index: 3;
+            float: left;
+            width: 49%;
+            height: 100%;
+        }
+        .left-button:hover { cursor: pointer;}
+        .right-button {
+            float: left;
+            z-index: 3;
+            margin-left: 50%;
+            width: 48%;
+            height: 100%;
+            position: absolute;
+        }
+        .right-button:hover { cursor: pointer;}
+    }
+    .partners {
+        margin-top: 5%;
     }
     .item {
         box-shadow: 3px 3px 13px rgba(0, 1, 1, 0.2);
