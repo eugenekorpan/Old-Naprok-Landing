@@ -7,6 +7,9 @@
 .body {
     font-family: 'Open Sans', sans-serif;
 }
+a, button, img, input { outline: none; }
+
+.no-outline { outline: none }
 
 .left-nav {
     z-index: 1;
@@ -396,7 +399,7 @@
             font-weight: 700;
             font-size: 22px;
             letter-spacing: 1.84px;
-            width: 275px;
+            width: 90%;
             height: 63px;
             border-radius: 36px;
             outline: none;
