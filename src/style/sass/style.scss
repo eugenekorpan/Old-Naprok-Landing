@@ -19,6 +19,7 @@ a, button, img, input { outline: none; }
     height: 65vh;
     width: 35px;
     font-family: 'Open Sans', sans-serif;
+    .top-button { margin-left: 0px;}
     a {
         text-decoration: none;
         color: #bfbfbf;
@@ -87,6 +88,7 @@ a, button, img, input { outline: none; }
 
 
 .section-1 {
+    overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     background-image: url('./images/1-background.png');
     background-repeat: no-repeat;
@@ -106,6 +108,7 @@ a, button, img, input { outline: none; }
         margin-top: 6%;
     }
     .talk-button {
+        overflow: hidden;
         background-color: #00e3e6;
         color: #ffffff;
         font-weight: 700;
@@ -267,22 +270,29 @@ a, button, img, input { outline: none; }
     }
     .buttons {
         .left-button{
+            background-image: url("./images/5-nav-left.png");
+            background-repeat: no-repeat;
             position: absolute;
             z-index: 3;
             float: left;
-            width: 49%;
-            height: 100%;
+            width: 20px;
+            height: 30px;
+            top: 30%;
+            left: 20%;
         }
-        .left-button:hover { cursor: pointer;}
+        .left-button:hover { cursor: pointer; transform: scale(1.2);}
         .right-button {
+            background-image: url("./images/5-nav-right.png");
+            background-repeat: no-repeat;
             float: left;
             z-index: 3;
-            margin-left: 50%;
-            width: 48%;
-            height: 100%;
+            top: 30%;
+            left: 65%;
+            width: 20px;
+            height: 30px;
             position: absolute;
         }
-        .right-button:hover { cursor: pointer;}
+        .right-button:hover { cursor: pointer; transform: scale(1.2);}
     }
     .partners {
         margin-top: 5%;

@@ -1,19 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Roboto:500,700");
 .debug {
-  border: 2px solid red; }
+  border: 1px solid red; }
 
 .body {
   font-family: 'Open Sans', sans-serif; }
+
+a, button, img, input {
+  outline: none; }
+
+.no-outline {
+  outline: none; }
 
 .left-nav {
   z-index: 1;
   position: fixed;
   left: 8vw;
-  top: 18vw;
-  height: 32vh;
-  width: 30px;
+  top: 15vw;
+  height: 65vh;
+  width: 35px;
   font-family: 'Open Sans', sans-serif; }
+  .left-nav .top-button {
+    margin-left: 0px; }
   .left-nav a {
     text-decoration: none;
     color: #bfbfbf;
@@ -25,8 +33,11 @@
       color: #00e3e6; }
   .left-nav a:hover {
     color: #00e3e6; }
+  .left-nav .active {
+    color: #00e3e6; }
   .left-nav img:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    margin-left: 0px; }
 
 #sidebar {
   font-family: 'Open Sans', sans-serif; }
@@ -68,6 +79,7 @@
   cursor: pointer; }
 
 .section-1 {
+  overflow: hidden;
   font-family: 'Open Sans', sans-serif;
   background-image: url("./images/1-background.png");
   background-repeat: no-repeat;
@@ -84,6 +96,7 @@
     font-size: 23px;
     margin-top: 6%; }
   .section-1 .talk-button {
+    overflow: hidden;
     background-color: #00e3e6;
     color: #ffffff;
     font-weight: 700;
@@ -228,8 +241,34 @@
     font-weight: 700; }
     .section-5 .title .blue {
       color: #00e3e6; }
-  .section-5 .amp-scrollable-carousel-slide {
-    margin-left: 0px; }
+  .section-5 .buttons .left-button {
+    background-image: url("./images/5-nav-left.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+    float: left;
+    width: 20px;
+    height: 30px;
+    top: 30%;
+    left: 20%; }
+  .section-5 .buttons .left-button:hover {
+    cursor: pointer;
+    transform: scale(1.2); }
+  .section-5 .buttons .right-button {
+    background-image: url("./images/5-nav-right.png");
+    background-repeat: no-repeat;
+    float: left;
+    z-index: 3;
+    top: 30%;
+    left: 65%;
+    width: 20px;
+    height: 30px;
+    position: absolute; }
+  .section-5 .buttons .right-button:hover {
+    cursor: pointer;
+    transform: scale(1.2); }
+  .section-5 .partners {
+    margin-top: 5%; }
   .section-5 .item {
     box-shadow: 3px 3px 13px rgba(0, 1, 1, 0.2);
     width: 90%;
@@ -323,7 +362,7 @@
       font-weight: 700;
       font-size: 22px;
       letter-spacing: 1.84px;
-      width: 275px;
+      width: 90%;
       height: 63px;
       border-radius: 36px;
       outline: none;
