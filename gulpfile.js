@@ -9,38 +9,87 @@ var cleanCSS = require('gulp-clean-css');
 var htmlreplace = require('gulp-html-replace');
 var amphtmlValidator = require('amphtml-validator');
 var fs = require('fs');
+var browserSync = require('browser-sync');
+var runSeq = require('run-sequence');
+var clean = require('gulp-clean');
 
 
-const BUILD_HTML = 'index.html';
+const BUILD_HTML = './amphtml.html';
 const SOURCE = {
-  'CSS': './css/style.css',
-  'AMPHTML': './amphtml/index.html',
-  'CLEANED_CSS': './amphtml/css/style.css'
+  'MIN_CSS': './src/style/min/style.css',
+  'AMPHTML': './src/amphtml.html',
+  'CLEANED_CSS': './src/style/min/style.css'
 }
 
-// purify removes unused CSS classes
-gulp.task('purify', function() {
-  return gulp.src(SOURCE.CSS)
-    .pipe(purify([SOURCE.AMPHTML]))
-    .pipe(gulp.dest('./amphtml/css'));
+gulp.task('sass', function () {
+  return gulp.src('./src/style/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./src/style'));
 });
 
-// inline-css inserts the cleaned + minified CSS into HTML
-gulp.task('inline-css', ['purify'], function() {
+gulp.task('css-concat', function(){
+  return gulp.src('./src/style/*.css')
+    .pipe(concat('style.css'))
+    .pipe(gulp.dest('./src/style/min'));
+});
+
+// purify removes unused CSS classes
+gulp.task('css-purify', function() {
+  return gulp.src(SOURCE.MIN_CSS)
+    .pipe(purify([SOURCE.AMPHTML]))
+    .pipe(gulp.dest('./src/style/min'));
+});
+
+gulp.task('css-minify', function() {
+  return gulp.src(SOURCE.MIN_CSS)
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('./src/style/min'));
+});
+
+
+// inject-css inserts the cleaned + minified CSS into HTML
+gulp.task('inject-css', function() {
   return gulp.src(SOURCE.AMPHTML)
     .pipe(htmlreplace({
-      'cssInline': {
-        'src': gulp.src(SOURCE.CLEANED_CSS).pipe(cleanCSS()),
-        'tpl': '<style amp-custom>%s</style>'
+      cssInline: {
+        src: gulp.src(SOURCE.CLEANED_CSS),
+        tpl: '<!-- build:cssInline --><style amp-custom>%s</style><!-- endbuild -->'
       }
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./src'));
+});
+
+gulp.task('sass:watch', function() {
+  gulp.watch('./src/style/sass/*', () => { 
+    runSeq('sass', 'css-concat', 'css-minify', 'inject-css')});
+})
+
+gulp.task('start', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'src/'
+    },
+    stream: true,
+    notify: false
+  })
+})
+
+
+gulp.task('unwrap-src', function(){
+  return gulp.src(['./src/**/*', '!./src/style/**/*'])
+         .pipe(gulp.dest('.'))
+});
+
+gulp.task('clean', function(){
+  return gulp.src(['amphtml.html', './font', './images'], { read: false})
+         .pipe(clean())
+
 });
 
 // validate ensures the AMP HTML is valid
 gulp.task('validate', function() {
   amphtmlValidator.getInstance().then(function (validator) {
-    var input = fs.readFileSync(BUILD_HTML, 'utf8');
+    var input = fs.readFileSync('./src/amphtml.html', 'utf8');
     var result = validator.validateString(input);
     ((result.status === 'PASS') ? console.log : console.error)(BUILD_HTML + ": " + result.status);
     for (var ii = 0; ii < result.errors.length; ii++) {
@@ -54,39 +103,5 @@ gulp.task('validate', function() {
   });
 });
 
-gulp.task('cssMinfy', function(){
-  return gulp.src([
-  		'./css/app.css',
-  		'./css/bootstrap.min.css',
-      /*'./css/animate.min.css'*/
-	])
-  	.pipe(concat('style.css'))
-    /*.pipe(gulp.dest('./css'));*/
-    .pipe(gulp.dest('./amphtml/css'));
-});
-
-/*gulp.task('scripts', function(){
-  return gulp.src([
-      './js/main.js',
-      './js/jquery-2.2.4.min.js'
-  ])
-    .pipe(concat('main.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('./js'));
-});*/
-
-
-gulp.task('compress-img', function() {
-  gulp.src('images/*')
-  .pipe(imagemin())
-  .pipe(gulp.dest('images'))
-});
-
-gulp.task('sass', function () {
-  return gulp.src('_sass/app.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('css'));
-});
-
-gulp.task('build', ['compress-img', 'sass', 'cssMinfy', 'inline-css']);
+gulp.task('build', function () {runSeq('sass', 'css-concat', 'css-minify', 'css-purify', 'inject-css', 'unwrap-src')});
 gulp.task('default', ['validate']);

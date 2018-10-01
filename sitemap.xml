@@ -12,52 +12,7 @@
    </url>
 
  <url> 
-   <loc>https://naprok.com/</loc>
-    <image:image>
-       <image:loc>https://naprok.com/images/logo.svg</image:loc>
-    </image:image>
-    <image:image>
-       <image:loc>https://naprok.com/images/dev-add.svg</image:loc>
-    </image:image>
-  <image:image>
-       <image:loc>https://naprok.com/images/easy.svg</image:loc>
-  </image:image>
- <image:image>
-       <image:loc>https://naprok.com/images/clock.svg</image:loc>
-  </image:image>
- <image:image>
-       <image:loc>https://naprok.com/images/paper.svg</image:loc>
-  </image:image>
- <image:image>
-       <image:loc>https://naprok.com/images/dev-manage.svg</image:loc>
-  </image:image>
-<image:image>
-       <image:loc>https://naprok.com/images/developers.svg</image:loc>
-  </image:image>
-<image:image>
-       <image:loc>https://naprok.com/images/bubble.svg</image:loc>
-  </image:image>
-<image:image>
-       <image:loc>https://naprok.com/images/dev-check.svg</image:loc>
-  </image:image>
-<image:image>
-       <image:loc>https://naprok.com/images/skills.svg</image:loc>
-  </image:image>
-<image:image>
-       <image:loc>https://naprok.com/images/test.svg</image:loc>
-  </image:image>
-<image:image>
-       <image:loc>https://naprok.com/images/logos/active-bridge.jpg</image:loc>
-  </image:image>
-<image:image>
-       <image:loc>https://naprok.com/images/logos/milestep.png</image:loc>
-  </image:image>
-<image:image>
-       <image:loc>https://naprok.com/images/logos/defaultvalue.png</image:loc>
-  </image:image>
-<image:image>
-       <image:loc>https://naprok.com/images/logos/everlabs.png</image:loc>
-  </image:image>
+   <loc>https://naprok.com/</loc> 
  </url>
 
 </urlset> 
