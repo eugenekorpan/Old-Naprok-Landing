@@ -14,10 +14,10 @@ var runSeq = require('run-sequence');
 var clean = require('gulp-clean');
 
 
-const BUILD_HTML = './index.html';
+const BUILD_HTML = './amphtml.html';
 const SOURCE = {
   'MIN_CSS': './src/style/min/style.css',
-  'AMPHTML': './src/index.html',
+  'AMPHTML': './src/amphtml.html',
   'CLEANED_CSS': './src/style/min/style.css'
 }
 
@@ -81,7 +81,7 @@ gulp.task('unwrap-src', function(){
 });
 
 gulp.task('clean', function(){
-  return gulp.src(['index.html', './font', './images'], { read: false})
+  return gulp.src(['amphtml.html', './font', './images'], { read: false})
          .pipe(clean())
 
 });
@@ -89,7 +89,7 @@ gulp.task('clean', function(){
 // validate ensures the AMP HTML is valid
 gulp.task('validate', function() {
   amphtmlValidator.getInstance().then(function (validator) {
-    var input = fs.readFileSync('./src/index.html', 'utf8');
+    var input = fs.readFileSync('./src/amphtml.html', 'utf8');
     var result = validator.validateString(input);
     ((result.status === 'PASS') ? console.log : console.error)(BUILD_HTML + ": " + result.status);
     for (var ii = 0; ii < result.errors.length; ii++) {
@@ -103,5 +103,5 @@ gulp.task('validate', function() {
   });
 });
 
-gulp.task('build', ['sass', 'css-concat', 'css-minify', 'css-purify', 'inject-css', 'unwrap-src']);
+gulp.task('build', function () {runSeq('sass', 'css-concat', 'css-minify', 'css-purify', 'inject-css', 'unwrap-src')});
 gulp.task('default', ['validate']);
